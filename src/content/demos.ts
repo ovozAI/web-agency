@@ -34,6 +34,7 @@ export const demos: Demo[] = [
       ru: "AI аналитика колл-центра и real-time транскрипция.",
     },
     url: "https://ovozai.uz",
+    preview: "/assets/ovozai.png",
     badges: [
       { text: { uz: "AI", ru: "AI" }, color: "lime" },
       { text: { uz: "SaaS", ru: "SaaS" }, color: "ink" },
@@ -80,6 +81,7 @@ export const demos: Demo[] = [
       ru: "Веб страница для супермаркета.",
     },
     url: "/demos/market/index.html",
+    preview: "/demos/market/market3.png",
     badges: [{ text: { uz: "Web", ru: "Web" }, color: "ocean" }],
   },
   {
@@ -94,6 +96,17 @@ export const demos: Demo[] = [
       { text: { uz: "Telegram Bot", ru: "Telegram Bot" }, color: "ocean" },
       { text: { uz: "AI", ru: "AI" }, color: "lime" },
     ],
+  },
+  {
+    slug: "estetic",
+    title: { uz: "Estetic medical", ru: "Estetic medical" },
+    description: {
+      uz: "Xususiy klinika uchun veb sahifa",
+      ru: "Веб страница для частной клиники.",
+    },
+    url: "https://estetic.uz",
+    preview: "/assets/estetic.png",
+    badges: [{ text: { uz: "Web", ru: "Web" }, color: "ocean" }],
   },
 
   {
