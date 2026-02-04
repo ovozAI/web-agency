@@ -1,0 +1,8 @@
+<svg width="800" height="500" viewBox="0 0 800 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="500" rx="32" fill="#F6F4EF" />
+  <rect x="56" y="72" width="688" height="120" rx="24" fill="#2D1F1A" />
+  <rect x="56" y="220" width="320" height="200" rx="24" fill="#FFFFFF" />
+  <rect x="400" y="220" width="344" height="200" rx="24" fill="#FFFFFF" />
+  <text x="90" y="130" fill="#F6F4EF" font-family="Arial" font-size="32" font-weight="700">Cafe Landing</text>
+  <text x="90" y="175" fill="#F6F4EF" font-family="Arial" font-size="16">Warm mornings, bold flavors.</text>
+</svg>

@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+body {
+  @apply bg-mist text-ink antialiased;
+  font-family: var(--font-body), system-ui, sans-serif;
+  font-feature-settings: "ss01" on, "ss03" on;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-display), system-ui, sans-serif;
+}
+
+.container {
+  @apply mx-auto max-w-6xl px-6;
+}
+
+.glass {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(11, 15, 26, 0.08);
+}
+
+.grid-sheen {
+  background-image:
+    linear-gradient(90deg, rgba(11, 15, 26, 0.05) 1px, transparent 1px),
+    linear-gradient(0deg, rgba(11, 15, 26, 0.05) 1px, transparent 1px);
+  background-size: 32px 32px;
+}
+
+.fade-in {
+  animation: fade-in 0.6s ease-out both;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

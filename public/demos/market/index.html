@@ -1,0 +1,535 @@
+<!doctype html>
+
+<html class="light" lang="uz">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Mahalla Bozori Bosh Sahifasi - 2-Variant</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Noto+Sans:wght@400;500;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#25f447",
+              "background-light": "#f5f8f6",
+              "background-dark": "#102213",
+              tomato: "#ff6347",
+              carrot: "#ed9121",
+            },
+            fontFamily: {
+              display: ["Plus Jakarta Sans", "sans-serif"],
+              sans: ["Plus Jakarta Sans", "sans-serif"],
+            },
+            borderRadius: {
+              DEFAULT: "0.25rem",
+              lg: "0.5rem",
+              xl: "0.75rem",
+              full: "9999px",
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      .material-symbols-outlined {
+        font-variation-settings:
+          "FILL" 0,
+          "wght" 400,
+          "GRAD" 0,
+          "opsz" 24;
+      }
+    </style>
+  </head>
+  <body
+    class="bg-background-light dark:bg-background-dark font-display text-[#111812] dark:text-white transition-colors duration-300"
+  >
+    <div
+      class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden"
+    >
+      <div class="layout-container flex h-full grow flex-col">
+        <!-- Top Navigation Bar -->
+        <header
+          class="flex items-center justify-between whitespace-nowrap border-b border-solid border-[#f0f5f1] dark:border-[#2a3a2d] px-6 md:px-20 py-4 bg-white dark:bg-[#1a2e1d] sticky top-0 z-50"
+        >
+          <div class="flex items-center gap-8">
+            <div class="flex items-center gap-3 text-primary">
+              <span class="material-symbols-outlined text-3xl">local_mall</span>
+              <h2
+                class="text-[#111812] dark:text-white text-xl font-extrabold leading-tight tracking-tight"
+              >
+                Mahalla Bozori
+              </h2>
+            </div>
+            <nav class="hidden lg:flex items-center gap-8">
+              <a
+                class="text-[#111812] dark:text-gray-200 text-sm font-semibold hover:text-primary transition-colors"
+                href="#"
+                >Do'kon</a
+              >
+              <a
+                class="text-[#111812] dark:text-gray-200 text-sm font-semibold hover:text-primary transition-colors"
+                href="#"
+                >Bo'limlar</a
+              >
+              <a
+                class="text-[#111812] dark:text-gray-200 text-sm font-semibold hover:text-primary transition-colors"
+                href="#"
+                >Chegirmalar</a
+              >
+              <a
+                class="text-[#111812] dark:text-gray-200 text-sm font-semibold hover:text-primary transition-colors"
+                href="#"
+                >Hamjamiyat</a
+              >
+            </nav>
+          </div>
+          <div class="flex flex-1 justify-end gap-4 md:gap-8 items-center">
+            <label class="hidden sm:flex flex-col min-w-40 !h-10 max-w-64">
+              <div
+                class="flex w-full flex-1 items-stretch rounded-lg h-full overflow-hidden"
+              >
+                <div
+                  class="text-[#608a67] flex border-none bg-gray-100 dark:bg-[#2a3a2d] items-center justify-center pl-4"
+                >
+                  <span class="material-symbols-outlined text-[20px]"
+                    >search</span
+                  >
+                </div>
+                <input
+                  class="form-input flex w-full min-w-0 flex-1 border-none bg-gray-100 dark:bg-[#2a3a2d] text-[#111812] dark:text-white focus:ring-0 h-full placeholder:text-gray-500 px-4 pl-2 text-sm"
+                  placeholder="Mahsulotlarni qidirish..."
+                  value=""
+                />
+              </div>
+            </label>
+            <button
+              class="flex min-w-[120px] cursor-pointer items-center justify-center rounded-lg h-10 px-4 bg-primary text-[#111812] text-sm font-bold shadow-sm hover:brightness-105 transition-all"
+            >
+              <span class="truncate">Do'konni topish</span>
+            </button>
+            <div
+              class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10 border-2 border-primary"
+              data-alt="User profile avatar placeholder"
+              style="
+                background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuDnBzPEgHbLh00qMW7MwF64ljvbjun0iRjtupZPvgL67jAa6qYOJqaPtKH3cGBv1krv33Wo7y92VGhjukmiZIouU2-p0fFxT8-Kbo9yrobvwSxNinQX8rJ5t04fiL2E8vhbSCG5sjvxreM3KceykXZwdbkPZSKoaeo85yTg6_BfqhEdkLARUJxolRAp7kumUJNiYrc0ps11P7tVmAXANZFRn1rcCpbbWa6PuQvYCzO4VQRIdwC8h9vhWOSioVEYWj4cgpTRl8HYpa8&quot;);
+              "
+            ></div>
+          </div>
+        </header>
+        <main class="flex flex-col">
+          <!-- Hero Section -->
+          <section class="w-full px-4 md:px-20 py-8">
+            <div class="@container">
+              <div
+                class="relative flex min-h-[520px] flex-col gap-6 bg-cover bg-center bg-no-repeat rounded-2xl items-start justify-end px-6 pb-12 md:px-16 md:pb-20 overflow-hidden shadow-xl"
+                data-alt="Vibrant close up of organic apples and oranges at a farmer market"
+                style="
+                  background-image:
+                    linear-gradient(
+                      rgba(0, 0, 0, 0.2) 0%,
+                      rgba(0, 0, 0, 0.6) 100%
+                    ),
+                    url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuDQIQrr1MGRDiWjMg49mBnlBkIP_NQCyZ3nkSsJC6-s8D3dEAEcH-BJvJDT6YcDAB0fno-Kvt9SfjMRKUfgd17Le7mr2TQx-trApqFWPQ3iu7GBCqDwwQh5Iz2XfjzcEnskETgUEwq5BwMUf2Rg6SdvrjMRsiqXcoOZ-DaoE_nCPn_E7rqophIIBoVm76WduX5s21gSTQG8vRVijqPKj8ORFj6wkXtjpi0UhuZaPux8aVuBZRwsf0vs_MlqaXqCKGPZJixz06NFFzU&quot;);
+                "
+              >
+                <div class="flex flex-col gap-4 text-left max-w-2xl">
+                  <span
+                    class="bg-carrot text-white px-3 py-1 rounded-full text-xs font-bold w-fit uppercase tracking-widest"
+                    >Fermerdan To'g'ridan-to'g'ri</span
+                  >
+                  <h1
+                    class="text-white text-5xl md:text-6xl font-black leading-tight tracking-tight"
+                  >
+                    Dalalarimizdan Dasturxoningizga Yangilik
+                  </h1>
+                  <p
+                    class="text-white/90 text-lg font-medium leading-relaxed max-w-lg"
+                  >
+                    O‘z mahallangizda sara mahalliy mahsulotlar va hamjamiyatga
+                    yo‘naltirilgan oziq-ovqat xaridlarini kashf eting.
+                  </p>
+                </div>
+                <button
+                  class="flex min-w-[180px] cursor-pointer items-center justify-center rounded-xl h-14 px-8 bg-primary text-[#111812] text-lg font-extrabold shadow-lg hover:scale-105 transition-transform"
+                >
+                  <span class="truncate">Hozir Xarid Qiling</span>
+                </button>
+              </div>
+            </div>
+          </section>
+          <!-- Deal of the Day Banner -->
+          <section class="px-4 md:px-20 mb-8">
+            <div
+              class="bg-tomato rounded-xl p-6 flex flex-col md:flex-row items-center justify-between gap-4 shadow-lg text-white"
+            >
+              <div class="flex items-center gap-4">
+                <span class="material-symbols-outlined text-4xl"
+                  >local_fire_department</span
+                >
+                <div>
+                  <h3 class="text-xl font-extrabold uppercase tracking-tighter">
+                    Kun Taklifi
+                  </h3>
+                  <p class="text-sm font-medium opacity-90">
+                    Tugashidan oldin ulgurib qoling!
+                  </p>
+                </div>
+              </div>
+              <div
+                class="flex-1 flex flex-col md:flex-row items-center justify-center gap-6"
+              >
+                <div
+                  class="flex items-center gap-4 bg-white/10 p-3 rounded-lg border border-white/20 w-full md:w-auto"
+                >
+                  <div
+                    class="w-16 h-16 bg-center bg-cover rounded-md"
+                    data-alt="Organic heirloom tomatoes"
+                    style="
+                      background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuAiBRoZxzmsslmnpK_EMH5yfeQ5GPh3eCT-cU4r0kPI0fVS73qlm0eZMyymwtJJsgB-Yv7X347WQb-mbC-SFiiwnhYqlfDm2V8xlZO62kycY6g8WjFU5abRCFhtl0C6Ai_aIZdlCqXY-C0lDoYE77bppAqaT1O5TxmqEvRshCRIdNCI0WneIjb0fqG95MD8dEn54hmZkunMVPYHufA4utMHHH31xn0wf02fxJLefy57fGqpk4_fAbIbiwNt6jcbKXIvYA-8FEpRgp4&quot;);
+                    "
+                  ></div>
+                  <div>
+                    <p class="font-bold">Organik Pomidorlar</p>
+                    <p class="text-primary font-black text-lg">
+                      BUGUN 20% CHEGIRMA
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <button
+                class="bg-white text-tomato font-black px-8 py-3 rounded-lg hover:bg-gray-100 transition-colors whitespace-nowrap"
+              >
+                Taklifdan Foydalanish
+              </button>
+            </div>
+          </section>
+          <!-- Shop by Department -->
+          <section class="px-4 md:px-20 py-10">
+            <div class="flex justify-between items-end mb-8 px-2">
+              <div>
+                <h2
+                  class="text-3xl font-black text-[#111812] dark:text-white tracking-tight"
+                >
+                  Bo'limlar bo'yicha xarid
+                </h2>
+                <p class="text-gray-500 dark:text-gray-400 font-medium">
+                  Oshxonangiz uchun sifatli mahsulotlar
+                </p>
+              </div>
+              <a
+                class="text-primary font-bold flex items-center gap-1 hover:underline"
+                href="#"
+                >Barchasini ko'rish
+                <span class="material-symbols-outlined">chevron_right</span></a
+              >
+            </div>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+              <!-- Dept 1 -->
+              <div class="group cursor-pointer">
+                <div
+                  class="aspect-[4/5] rounded-2xl bg-center bg-cover mb-4 relative overflow-hidden transition-transform group-hover:-translate-y-2"
+                  data-alt="Fresh vegetable assortment"
+                  style="
+                    background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuA7X7KWmlmHI7W9RNscxacJnEjdqFJoNbl7nax2rFg2GTxQMFJCaEkbAbqS65_Ut-Uz3x3aV0cvI3B2x2NSknpDVuKdXllj4BBNYdFPp9_MAwtx_tS5SjpkQrOxMtirUjmKQmBKlff1GRyqTgKxpQj5nQ1RKf6orcJOtDzDfcWM4wLOjiNKBQsIrzsEAcG6s2CZP-WF-xeKvD6lc203btm6nJReGEbxftPHSJ9kbposa3e1AofTv---8aNlP0yXQQUr1nSJEs0PwV8&quot;);
+                  "
+                >
+                  <div
+                    class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"
+                  ></div>
+                  <div class="absolute bottom-4 left-4">
+                    <h4 class="text-white font-bold text-xl">
+                      Mevalar va sabzavotlar
+                    </h4>
+                  </div>
+                </div>
+              </div>
+              <!-- Dept 2 -->
+              <div class="group cursor-pointer">
+                <div
+                  class="aspect-[4/5] rounded-2xl bg-center bg-cover mb-4 relative overflow-hidden transition-transform group-hover:-translate-y-2"
+                  data-alt="Artisan baked bread"
+                  style="
+                    background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuBK6shefGO37H2GcGiz8XGyMg5v4q7fR4fdR8c70N0sBhGCMMQy0sqOgnScsWOMwJxuWRoKszEF6zAOtS2jWU5fgqmUtQPfoOh7cOhAlnMcXgk7SyFaseLT4nWRtJIFS9bGVdN58Zkgwq0lmHNqvVHu_3z_FUdgf9Wjl-0rdyVknASRmHirdNNhGv3kGzGyog2Uf_XHIo91gdClBicWXXTRvq2ykg8mTABimefVuVEj5VxIMmvKaZnTBNPHeBlSGtOsIduLP8KN-Rc&quot;);
+                  "
+                >
+                  <div
+                    class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"
+                  ></div>
+                  <div class="absolute bottom-4 left-4">
+                    <h4 class="text-white font-bold text-xl">
+                      Non mahsulotlari
+                    </h4>
+                  </div>
+                </div>
+              </div>
+              <!-- Dept 3 -->
+              <div class="group cursor-pointer">
+                <div
+                  class="aspect-[4/5] rounded-2xl bg-center bg-cover mb-4 relative overflow-hidden transition-transform group-hover:-translate-y-2"
+                  data-alt="Fresh sea bass and seafood"
+                  style="
+                    background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuCWOb7Eg4wusl3YWvrYMnJ2GuGGFIhtRWSPSQ9k6eIb5OqIsivJOyxFRGq-rEr9u-s5NHf5h8uxnnJaKsoPJDqvrWUwXKBiVXCUbkGi7Kbt885yetli0ojHwTeam_Y7o4yKYUTUm6fxCYn8Ish5cepZKDlo3h3OwcZpUG5-xH3FaWvDHyp3rw1fywGGl2xex4Y2Zz6-mGzPJwzG1bvy-stc65Yfb-5my4l_u9RaDHSr4AyuRtD3KjTiHclKvrd-OoEt26hzCnoruKk&quot;);
+                  "
+                >
+                  <div
+                    class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"
+                  ></div>
+                  <div class="absolute bottom-4 left-4">
+                    <h4 class="text-white font-bold text-xl">
+                      Go'sht va Dengiz mahsulotlari
+                    </h4>
+                  </div>
+                </div>
+              </div>
+              <!-- Dept 4 -->
+              <div class="group cursor-pointer">
+                <div
+                  class="aspect-[4/5] rounded-2xl bg-center bg-cover mb-4 relative overflow-hidden transition-transform group-hover:-translate-y-2"
+                  data-alt="Dairy and eggs"
+                  style="
+                    background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuBz0ZQDUbMRBSGi5e1OdNIYtM2wIIGRCl90V5gaSQ2UWQxb2YByJu4DOFSuqwBUqCRM2fTj5b09hKJ2ZoJDon2GnnEHOzpc9gE3RJrs9U7X3ym6ELYL5lgBCPjzGj0aEVCitiNDM53zqVLfTmHUBO6OJssfq2TWFegsbBNY-E2smkvDykH3pVi2h8_oKTgMUjWW05e_rAO7-bUM4s9FXJnhUWC30xCfXHk-UNnJG4y_HjoLWn3LIKg4kLCo0ySnc9OOcBuRr1Qgx3o&quot;);
+                  "
+                >
+                  <div
+                    class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"
+                  ></div>
+                  <div class="absolute bottom-4 left-4">
+                    <h4 class="text-white font-bold text-xl">Sut va Tuxum</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- Neighborhood News Section -->
+          <section class="px-4 md:px-20 py-16 bg-white dark:bg-[#1a2e1d]">
+            <div class="mb-10 text-center">
+              <h2 class="text-3xl font-black tracking-tight mb-2">
+                Mahalla Yangiliklari
+              </h2>
+              <p class="text-gray-500 max-w-xl mx-auto">
+                Mahalliy hamjamiyatimiz va bizni oziqlantiruvchi fermerlar bilan
+                aloqada bo‘lish.
+              </p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+              <div
+                class="flex gap-6 items-start p-4 rounded-2xl border border-gray-100 dark:border-gray-800 hover:shadow-md transition-shadow"
+              >
+                <div
+                  class="w-32 h-32 flex-shrink-0 bg-center bg-cover rounded-xl"
+                  data-alt="People doing yoga outdoors"
+                  style="
+                    background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuBZRY8iy5p4JnK2ASrl0ryI5ejTIQfsRrx9rI4BLT7oy1KqUa4kUHXTIsEd1p5W-5r9zkM20LCXucTJSxYK2DpVjibSBqwFtDpCSArBWp737TpOfk7DSn47hddHYSzykr9D5K8ZO6-mZ_chsq8lTg9SPNzE0L9p1yFng5GqyWG5CU1wWQJQYFVKpw5dHfIhNwlEVRJ4Bb9hYwX4q6t8IZll4dUkdh4pQB0ulqsReBXZF2a3Y3XLCTStRoARoMfei438o7X8Pfh-Jk4&quot;);
+                  "
+                ></div>
+                <div class="flex flex-col gap-2">
+                  <span class="text-carrot text-xs font-bold uppercase"
+                    >Hamjamiyat Tadbiri</span
+                  >
+                  <h4 class="text-xl font-bold">Shanba Tonggi Yoga</h4>
+                  <p class="text-sm text-gray-600 dark:text-gray-400">
+                    Bizga shimoliy avtoturargohda soat 8:00 da bepul jamoat yoga
+                    mashg'ulotiga qo'shiling. Barcha darajadagilar uchun!
+                  </p>
+                  <a class="text-primary font-bold text-sm mt-2" href="#"
+                    >Batafsil</a
+                  >
+                </div>
+              </div>
+              <div
+                class="flex gap-6 items-start p-4 rounded-2xl border border-gray-100 dark:border-gray-800 hover:shadow-md transition-shadow"
+              >
+                <div
+                  class="w-32 h-32 flex-shrink-0 bg-center bg-cover rounded-xl"
+                  data-alt="Local beekeeper with honey jars"
+                  style="
+                    background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuBQxM6igrlbFvrbTiZTt7jyWGzndEkpaOfZpCS1BpbIgJ-LfuzdO2hyEtlJnHVfOfojnvi8hs537ofkKJV4jZ0gSV0VPlM5NxdKL3BXnlOBkP9GpPI8zKYYibplWFQop8zAkIklJmrTnm_-eCfrYN5O1pYYeeUDLc082CIQWTh-lu1O-ZXMYznnSjhbVW5AMyAY2coyaOJAV_Wp25HI9Kq1SLJHa2ydRGt0WSlOHHgnfTGE42X0T0D_Ahkc6NzuvINobpZEti6EW0o&quot;);
+                  "
+                ></div>
+                <div class="flex flex-col gap-2">
+                  <span class="text-carrot text-xs font-bold uppercase"
+                    >Fermer Bilan Tanishuv</span
+                  >
+                  <h4 class="text-xl font-bold">Millerlar Oilasi Asali</h4>
+                  <p class="text-sm text-gray-600 dark:text-gray-400">
+                    Bizning bor-yo'g'i 10 mil uzoqlikdan olinadigan mahalliy,
+                    xom organik asalimiz ortidagi jarayonni kashf eting.
+                  </p>
+                  <a class="text-primary font-bold text-sm mt-2" href="#"
+                    >Hikoyani O'qish</a
+                  >
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- Rewards CTA Block -->
+          <section class="px-4 md:px-20 py-20">
+            <div
+              class="bg-primary rounded-[2rem] p-10 md:p-16 flex flex-col items-center text-center shadow-2xl relative overflow-hidden"
+            >
+              <div
+                class="absolute top-0 right-0 w-64 h-64 bg-white/20 rounded-full -translate-y-1/2 translate-x-1/2"
+              ></div>
+              <div
+                class="absolute bottom-0 left-0 w-48 h-48 bg-black/10 rounded-full translate-y-1/2 -translate-x-1/2"
+              ></div>
+              <div class="relative z-10">
+                <span
+                  class="material-symbols-outlined text-6xl text-[#111812] mb-4"
+                  >stars</span
+                >
+                <h2 class="text-4xl md:text-5xl font-black text-[#111812] mb-4">
+                  Sadokat Dasturiga Qo'shiling
+                </h2>
+                <p
+                  class="text-lg text-[#111812]/80 font-medium max-w-2xl mb-10"
+                >
+                  Har bir sarflangan dollar uchun ball to'plang. A'zolar uchun
+                  maxsus takliflar, tug'ilgan kun sovg'alari va mahalliy hosilga
+                  erta kirish imkoniyatiga ega bo'ling.
+                </p>
+                <button
+                  class="bg-[#111812] text-white px-10 py-5 rounded-2xl text-xl font-black hover:scale-105 transition-transform shadow-xl"
+                >
+                  Hozir A'zo Bo'ling
+                </button>
+              </div>
+            </div>
+          </section>
+          <!-- Footer / Store Info -->
+          <section
+            class="bg-white dark:bg-[#0a160c] pt-20 border-t border-gray-100 dark:border-gray-800"
+          >
+            <div
+              class="px-4 md:px-20 grid grid-cols-1 lg:grid-cols-2 gap-12 pb-20"
+            >
+              <div class="flex flex-col gap-8">
+                <div>
+                  <h3 class="text-2xl font-black mb-4">
+                    Bozorimizga Tashrif Buyuring
+                  </h3>
+                  <p class="text-gray-500 dark:text-gray-400">
+                    123 Yangi Yo'l, Hamjamiyat Aylanasi<br />Toshkent,
+                    O'zbekiston
+                  </p>
+                </div>
+                <div class="grid grid-cols-2 gap-8">
+                  <div>
+                    <h5 class="font-bold text-[#111812] dark:text-white mb-2">
+                      Ish Vaqti
+                    </h5>
+                    <ul class="text-sm text-gray-500 space-y-1">
+                      <li class="flex justify-between">
+                        <span>Dushanba - Juma</span> <span>7:00 - 22:00</span>
+                      </li>
+                      <li class="flex justify-between font-bold text-primary">
+                        <span>Shanba</span> <span>8:00 - 23:00</span>
+                      </li>
+                      <li class="flex justify-between">
+                        <span>Yakshanba</span> <span>8:00 - 21:00</span>
+                      </li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h5 class="font-bold text-[#111812] dark:text-white mb-2">
+                      Tezkor Havolalar
+                    </h5>
+                    <ul class="text-sm text-gray-500 space-y-1">
+                      <li>
+                        <a class="hover:text-primary" href="#"
+                          >Qo'llab-quvvatlash</a
+                        >
+                      </li>
+                      <li>
+                        <a class="hover:text-primary" href="#"
+                          >Yetkazib Berish Hududlari</a
+                        >
+                      </li>
+                      <li>
+                        <a class="hover:text-primary" href="#"
+                          >Bo'sh Ish O'rinlari</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="flex gap-4">
+                  <a
+                    class="size-10 bg-gray-100 dark:bg-[#1a2e1d] flex items-center justify-center rounded-lg hover:bg-primary transition-colors"
+                    href="#"
+                  >
+                    <span class="material-symbols-outlined">public</span>
+                  </a>
+                  <a
+                    class="size-10 bg-gray-100 dark:bg-[#1a2e1d] flex items-center justify-center rounded-lg hover:bg-primary transition-colors"
+                    href="#"
+                  >
+                    <span class="material-symbols-outlined"
+                      >alternate_email</span
+                    >
+                  </a>
+                  <a
+                    class="size-10 bg-gray-100 dark:bg-[#1a2e1d] flex items-center justify-center rounded-lg hover:bg-primary transition-colors"
+                    href="#"
+                  >
+                    <span class="material-symbols-outlined">call</span>
+                  </a>
+                </div>
+              </div>
+              <div
+                class="h-[400px] bg-gray-200 dark:bg-[#1a2e1d] rounded-2xl overflow-hidden relative shadow-inner"
+              >
+                <div
+                  class="absolute inset-0 grayscale opacity-80"
+                  data-alt="Modern stylized map of neighborhood location"
+                  data-location="Portland, Oregon"
+                  style="
+                    background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuCJM7L7qapIFCG4jYgpNoEY-w-oZ3zeKa_-0KIa9iF39hF43td4r3fOtu6q0jUHYjUUIY33FdzHVwAcZLDpRkrh1l5zuXRKglwqq2ZEM31-Cj5QII1Gn-9DSTWxXbr-6k0LBLKvo6fS1aneKB3fqEYYz6gb3ButjrjU0x55yilnCaInhtPZprvxHaNfG7ZYAusrqGWa-FhS-bR8CDK2mNxmGuKNMRTpIv5BUkCrvH_GNaGQpZCdUcuvKNxdrF_gkcY7Ks1IIJ38fwU&quot;);
+                    background-size: cover;
+                  "
+                ></div>
+                <div
+                  class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col items-center"
+                >
+                  <span
+                    class="material-symbols-outlined text-tomato text-5xl drop-shadow-lg"
+                    >location_on</span
+                  >
+                  <div class="bg-white px-4 py-2 rounded-lg shadow-xl mt-2">
+                    <p class="text-xs font-black text-black">
+                      BIZ SHU YERDAMIZ
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="px-4 md:px-20 py-8 border-t border-gray-100 dark:border-gray-800 flex flex-col md:flex-row justify-between items-center gap-4 text-xs font-medium text-gray-400"
+            >
+              <p>© 2024 Mahalla Bozori. Barcha huquqlar himoyalangan.</p>
+              <div class="flex gap-6">
+                <a class="hover:text-primary" href="#">Maxfiylik Siyosati</a>
+                <a class="hover:text-primary" href="#">Foydalanish Shartlari</a>
+                <a class="hover:text-primary" href="#">Cookie Sozlamalari</a>
+              </div>
+            </div>
+          </section>
+        </main>
+      </div>
+    </div>
+  </body>
+</html>
