@@ -105,16 +105,16 @@ const dictionaries: Record<Locale, Dictionary> = {
       pricing: "Narxlar",
       faq: "Savollar",
       contact: "Bog'lanish",
-      services: "Xizmatlar"
+      services: "Xizmatlar",
     },
     hero: {
-      badge: "Cheklangan vaqtli taklif",
+      badge: "Maxsus taklif",
       title: "Biznesingiz uchun professional veb-sayt",
       subtitle:
-        "Kichik va o'rta bizneslar uchun zamonaviy saytlar, telegram botlar va veb-ilovalar. Domen xaridi barcha tarifga kiritilgan.",
+        "Kichik va o'rta bizneslar uchun zamonaviy saytlar, telegram botlar va veb-ilovalar. Domen barcha tariflarda bepul.",
       ctaPrimary: "Boshlash",
-      ctaSecondary: "Namunalari",
-      trust: "7 kun ichida tayyor. Dastlabki maslahat bepul."
+      ctaSecondary: "Namunalarni ko'rish",
+      trust: "3-5 kun ichida tayyor. Dastlabki maslahat bepul.",
     },
     services: {
       title: "Biz nima qilamiz",
@@ -122,62 +122,76 @@ const dictionaries: Record<Locale, Dictionary> = {
       items: [
         {
           title: "Landing sahifalar",
-          description: "Biznesingiz uchun tezkor va samarali bir sahifali saytlar. Mobil optimizatsiya va CTA bilan.",
-          icon: "landing"
+          description:
+            "Biznesingiz uchun tezkor va samarali bir sahifali saytlar. Mobil optimizatsiya va CTA bilan.",
+          icon: "landing",
         },
         {
           title: "Ko'p sahifali saytlar",
-          description: "Kompaniyalar, restoranlar va xizmat ko'rsatuvchilar uchun to'liq veb-saytlar.",
-          icon: "website"
+          description:
+            "Kompaniyalar, restoranlar va xizmat ko'rsatuvchilar uchun to'liq veb-saytlar.",
+          icon: "website",
         },
         {
           title: "Telegram botlar",
-          description: "Buyurtmalar, bronlash, mijozlar bilan aloqa va avtomatlashtirish uchun botlar.",
-          icon: "bot"
+          description:
+            "Buyurtmalar, bronlash, mijozlar bilan aloqa va avtomatlashtirish uchun botlar.",
+          icon: "bot",
         },
         {
           title: "Veb-ilovalar",
-          description: "CRM, admin panellar, e-commerce va maxsus biznes yechimlari.",
-          icon: "app"
-        }
-      ]
+          description:
+            "CRM, admin panellar, e-commerce va maxsus biznes yechimlari.",
+          icon: "app",
+        },
+      ],
     },
     offer: {
       headline: "Nima kiritilgan",
       includesTitle: "To'plamga kiradi",
       includes: [
         "Qisqa bozor/raqobatchi tadqiqoti",
-        "Domen xaridi va sozlash (narxga kiritilgan)",
+        "Domen xaridi va sozlash (narx ichida)",
         "1 sahifali landing va mobil optimizatsiya",
-        "Bepul hosting 1 yilga"
+        "Bepul hosting 1 yilga",
       ],
       excludesTitle: "Kirmaydi",
       excludes: [
-        "Murakkab web-ilovalar",
+        "Murakkab veb-ilovalar",
         "Maxsus backend va admin panel",
-        "Keng ko'lamli kataloglar"
+        "Keng ko'lamli kataloglar",
       ],
-      note: "Murakkab loyihalar uchun alohida narxlash mavjud."
+      note: "Murakkab loyihalar narxi alohida hisoblanadi.",
     },
     steps: {
       title: "Qanday ishlaymiz",
       items: [
-        { title: "1. Brifing", body: "Sizning biznesingiz va maqsadingizni aniqlaymiz." },
-        { title: "2. Dizayn", body: "Landing sahifa maketi va matnlarni tayyorlaymiz." },
-        { title: "3. Ishga tushirish", body: "Domen, hosting va analitika sozlanadi." }
-      ]
+        {
+          title: "1. Brifing",
+          body: "Sizning biznesingiz va maqsadingizni aniqlaymiz.",
+        },
+        {
+          title: "2. Dizayn",
+          body: "Landing sahifa maketi va matnlarni tayyorlaymiz.",
+        },
+        {
+          title: "3. Ishga tushirish",
+          body: "Domen, hosting va analitikani sozlaymiz.",
+        },
+      ],
     },
     demos: {
       title: "Bizning loyihalar",
       subtitle: "Turli sohalar uchun tayyor dizayn namunalari.",
       viewDemo: "Ko'rish",
       viewAll: "Barcha loyihalar",
-      openFullscreen: "To'liq ochish"
+      openFullscreen: "To'liq ochish",
     },
     pricing: {
       title: "Narxlar",
-      subtitle: "Har qanday biznes uchun mos yechim. Barcha tariflarga domen xaridi kiritilgan.",
-      domainIncluded: "Domen kiritilgan",
+      subtitle:
+        "Har qanday biznes uchun mos yechim. Barcha tariflarda domen bepul.",
+      domainIncluded: "Domen bepul",
       starter: {
         name: "Starter",
         price: "$99",
@@ -186,11 +200,11 @@ const dictionaries: Record<Locale, Dictionary> = {
           "Landing sahifa",
           "Mobil optimizatsiya",
           "CTA + aloqa formasi",
-          "Domen xaridi kiritilgan",
-          "2 ta tahrirlash",
-          "1 yillik qo'llab-quvvatlash"
+          "Domen bepul",
+          "2 ta tahrir",
+          "1 yillik texnik yordam",
         ],
-        popular: "Tavsiya etiladi"
+        popular: "Tavsiya etiladi",
       },
       business: {
         name: "Business",
@@ -200,14 +214,14 @@ const dictionaries: Record<Locale, Dictionary> = {
           "Ko'p sahifali sayt",
           "Mobil optimizatsiya",
           "Aloqa formasi + integratsiya",
-          "Domen xaridi kiritilgan",
-          "5 ta tahrirlash",
-          "1 yillik qo'llab-quvvatlash"
-        ]
+          "Domen bepul",
+          "5 ta tahrir",
+          "1 yillik texnik yordam",
+        ],
       },
       custom: {
         name: "Custom",
-        price: "Kelishuv",
+        price: "Kelishilgan holda",
         description: "Murakkab loyihalar va veb-ilovalar",
         features: [
           "E-commerce do'konlar",
@@ -215,47 +229,47 @@ const dictionaries: Record<Locale, Dictionary> = {
           "CRM va admin panellar",
           "API integratsiyalar",
           "UX/UI dizayn",
-          "Texnik qo'llab-quvvatlash"
-        ]
+          "Texnik yordam",
+        ],
       },
-      cta: "Boshlash"
+      cta: "Boshlash",
     },
     faq: {
       title: "Tez-tez so'raladigan savollar",
       items: [
         {
           q: "$99 tarifga nimalar kiradi?",
-          a: "Bir sahifali landing, bozor tadqiqoti, domen xaridi va sozlash, mobil optimizatsiya, CTA va aloqa formasi. Bundan tashqari 1 yillik texnik qo'llab-quvvatlash ham kiritilgan."
+          a: "Bir sahifali landing, bozor tadqiqoti, domen xaridi va sozlash, mobil optimizatsiya, CTA va aloqa formasi. Bundan tashqari 1 yillik texnik yordam ham kiritilgan.",
         },
         {
           q: "Starter va Business tariflari orasidagi farq nima?",
-          a: "Starter tarifi bitta sahifali landing uchun - asosiy ma'lumotlar va aloqa formasi bilan. Business tarifi esa ko'p sahifali veb-sayt - alohida bo'limlar, kengaytirilgan funksionallik va ko'proq tahrirlashlar bilan."
+          a: "Starter tarifi bitta sahifali landing uchun - asosiy ma'lumotlar va aloqa formasi bilan. Business tarifi esa ko'p sahifali veb-sayt - alohida bo'limlar, kengaytirilgan funksionallik va ko'proq o'zgartirishlar bilan.",
         },
         {
           q: "Domen narxi qanday bo'ladi?",
-          a: ".uz domeni narxga kiritilgan. .com, .net va boshqa xalqaro domenlar uchun qo'shimcha to'lov kerak bo'ladi. Domen sotib olish va sozlashni biz o'zimiz amalga oshiramiz."
+          a: ".uz domeni narxga kiritilgan. .com, .net va boshqa xalqaro domenlar uchun qo'shimcha to'lov kerak bo'ladi. Domen sotib olish va sozlashni biz o'zimiz amalga oshiramiz.",
         },
         {
           q: "Necha kunda tayyor bo'ladi?",
-          a: "Starter tarifi 5-7 ish kunida, Business tarifi 10-14 ish kunida tayyor bo'ladi. Murakkab loyihalar uchun muddatlar alohida kelishiladi."
+          a: "Starter tarifi 3-5 ish kunida, Business tarifi 7-10 ish kunida tayyor bo'ladi. Murakkab loyihalar uchun muddatlar alohida kelishiladi.",
         },
         {
-          q: "Qo'llab-quvvatlash nimalarni o'z ichiga oladi?",
-          a: "1 yillik qo'llab-quvvatlash davomida texnik muammolarni hal qilish, kichik o'zgarishlar kiritish va maslahat olish mumkin. Katta o'zgarishlar uchun alohida narxlash bo'ladi."
+          q: "Texnik yordam nimalarni o'z ichiga oladi?",
+          a: "1 yillik texnik yordam davomida texnik muammolarni hal qilish, kichik o'zgarishlar kiritish va maslahat olish mumkin. Katta o'zgarishlar uchun alohida narxlash bo'ladi.",
         },
         {
           q: "Telegram bot qanday ishlaydi?",
-          a: "Telegram botlar orqali buyurtmalarni qabul qilish, mijozlarga avtomatik javob berish, bronlash tizimi va boshqa biznes jarayonlarini avtomatlashtirish mumkin. Narx funksionallikga qarab belgilanadi."
+          a: "Telegram botlar orqali buyurtmalarni qabul qilish, mijozlarga avtomatik javob berish, bronlash tizimi va boshqa biznes jarayonlarini avtomatlashtirish mumkin. Narx funksionallikka qarab belgilanadi.",
         },
         {
           q: "To'lov qanday amalga oshiriladi?",
-          a: "50% oldindan to'lov, qolgan 50% loyiha tayyor bo'lgandan so'ng. Naqd pul, karta yoki bank o'tkazmasi orqali to'lash mumkin."
+          a: "50% oldindan to'lov, qolgan 50% loyiha tayyor bo'lgandan so'ng. Naqd pul, karta yoki bank o'tkazmasi orqali to'lash mumkin.",
         },
         {
           q: "Hosting ham kiritilganmi?",
-          a: "Ha, oddiy saytlar uchun 1 yillik bepul hosting taqdim etamiz. Murakkab saytlar va Telegram botlar uchun deploy va hosting xizmati uchun qo'shimcha to'lov bo'ladi."
-        }
-      ]
+          a: "Ha, oddiy saytlar uchun 1 yillik bepul hosting taqdim etamiz. Murakkab saytlar va Telegram botlar uchun deploy va hosting xizmati uchun qo'shimcha to'lov bo'ladi.",
+        },
+      ],
     },
     contact: {
       title: "Bog'lanish",
@@ -265,13 +279,13 @@ const dictionaries: Record<Locale, Dictionary> = {
       phone: "Telefon",
       message: "Xabar",
       submit: "Yuborish",
-      success: "Xabar yuborildi. Tez orada javob beramiz!",
+      success: "Xabar yuborildi. Tez orada aloqaga chiqamiz!",
       error: "Xatolik yuz berdi. Iltimos qayta urinib ko'ring.",
       quick: "Tezkor aloqa",
       phoneLabel: "Telefon raqam",
       telegramLabel: "Telegram",
-      starterSummary: "Landing + domen + 1 yillik qo'llab-quvvatlash",
-      businessSummary: "Ko'p sahifali + domen + 1 yillik qo'llab-quvvatlash"
+      starterSummary: "Landing + domen + 1 yillik texnik yordam",
+      businessSummary: "Ko'p sahifali + domen + 1 yillik texnik yordam",
     },
     footer: {
       tagline: "Biznesingizni onlayn olamga olib chiqamiz",
@@ -281,11 +295,11 @@ const dictionaries: Record<Locale, Dictionary> = {
         "Ko'p sahifali saytlar",
         "Telegram botlar",
         "E-commerce",
-        "CRM tizimlari"
+        "CRM tizimlari",
       ],
       contact: "Bog'lanish",
-      rights: "Barcha huquqlar himoyalangan"
-    }
+      rights: "Barcha huquqlar himoyalangan",
+    },
   },
   ru: {
     nav: {
@@ -294,7 +308,7 @@ const dictionaries: Record<Locale, Dictionary> = {
       pricing: "Цены",
       faq: "FAQ",
       contact: "Контакты",
-      services: "Услуги"
+      services: "Услуги",
     },
     hero: {
       badge: "Ограниченное предложение",
@@ -303,7 +317,7 @@ const dictionaries: Record<Locale, Dictionary> = {
         "Современные сайты, telegram боты и веб-приложения для малого и среднего бизнеса. Покупка домена включена во все тарифы.",
       ctaPrimary: "Начать",
       ctaSecondary: "Посмотреть демо",
-      trust: "Готово за 7 дней. Первая консультация бесплатно."
+      trust: "Готово за 3-5 дней. Первая консультация бесплатно.",
     },
     services: {
       title: "Что мы делаем",
@@ -311,25 +325,29 @@ const dictionaries: Record<Locale, Dictionary> = {
       items: [
         {
           title: "Лендинги",
-          description: "Быстрые и эффективные одностраничные сайты для вашего бизнеса. С мобильной оптимизацией и CTA.",
-          icon: "landing"
+          description:
+            "Быстрые и эффективные одностраничные сайты для вашего бизнеса. С мобильной оптимизацией и CTA.",
+          icon: "landing",
         },
         {
           title: "Многостраничные сайты",
-          description: "Полноценные сайты для компаний, ресторанов и сервисных организаций.",
-          icon: "website"
+          description:
+            "Полноценные сайты для компаний, ресторанов и сервисных организаций.",
+          icon: "website",
         },
         {
           title: "Telegram боты",
-          description: "Боты для заказов, бронирования, связи с клиентами и автоматизации процессов.",
-          icon: "bot"
+          description:
+            "Боты для заказов, бронирования, связи с клиентами и автоматизации процессов.",
+          icon: "bot",
         },
         {
           title: "Веб-приложения",
-          description: "CRM, админ-панели, e-commerce и индивидуальные бизнес-решения.",
-          icon: "app"
-        }
-      ]
+          description:
+            "CRM, админ-панели, e-commerce и индивидуальные бизнес-решения.",
+          icon: "app",
+        },
+      ],
     },
     offer: {
       headline: "Что входит",
@@ -338,34 +356,35 @@ const dictionaries: Record<Locale, Dictionary> = {
         "Короткое исследование рынка",
         "Покупка и настройка домена (включено в цену)",
         "Одностраничный лендинг + мобильная версия",
-        "Бесплатный хостинг на 1 год"
+        "Бесплатный хостинг на 1 год",
       ],
       excludesTitle: "Не входит",
       excludes: [
         "Сложные веб-приложения",
         "Кастомный backend и админка",
-        "Большие каталоги"
+        "Большие каталоги",
       ],
-      note: "Для сложных проектов — отдельная оценка."
+      note: "Для сложных проектов — отдельная оценка.",
     },
     steps: {
       title: "Как мы работаем",
       items: [
         { title: "1. Бриф", body: "Уточняем цели и особенности бизнеса." },
         { title: "2. Дизайн", body: "Готовим макет и тексты." },
-        { title: "3. Запуск", body: "Настраиваем домен, хостинг и аналитику." }
-      ]
+        { title: "3. Запуск", body: "Настраиваем домен, хостинг и аналитику." },
+      ],
     },
     demos: {
       title: "Portfolio",
       subtitle: "Готовые дизайн-примеры для разных отраслей.",
       viewDemo: "Посмотреть",
       viewAll: "Все проекты",
-      openFullscreen: "Открыть полностью"
+      openFullscreen: "Открыть полностью",
     },
     pricing: {
       title: "Цены",
-      subtitle: "Подходящее решение для любого бизнеса. Покупка домена включена во все тарифы.",
+      subtitle:
+        "Подходящее решение для любого бизнеса. Покупка домена включена во все тарифы.",
       domainIncluded: "Домен включен",
       starter: {
         name: "Starter",
@@ -377,9 +396,9 @@ const dictionaries: Record<Locale, Dictionary> = {
           "CTA + форма связи",
           "Покупка домена включена",
           "2 правки",
-          "1 год поддержки"
+          "1 год поддержки",
         ],
-        popular: "Рекомендуем"
+        popular: "Рекомендуем",
       },
       business: {
         name: "Business",
@@ -391,8 +410,8 @@ const dictionaries: Record<Locale, Dictionary> = {
           "Форма связи + интеграция",
           "Покупка домена включена",
           "5 правок",
-          "1 год поддержки"
-        ]
+          "1 год поддержки",
+        ],
       },
       custom: {
         name: "Custom",
@@ -404,47 +423,47 @@ const dictionaries: Record<Locale, Dictionary> = {
           "CRM и админ-панели",
           "API интеграции",
           "UX/UI дизайн",
-          "Техническая поддержка"
-        ]
+          "Техническая поддержка",
+        ],
       },
-      cta: "Начать"
+      cta: "Начать",
     },
     faq: {
       title: "Частые вопросы",
       items: [
         {
           q: "Что входит в тариф $99?",
-          a: "Одностраничный лендинг, исследование рынка, покупка и настройка домена, мобильная оптимизация, CTA и форма связи. Также включена техническая поддержка на 1 год."
+          a: "Одностраничный лендинг, исследование рынка, покупка и настройка домена, мобильная оптимизация, CTA и форма связи. Также включена техническая поддержка на 1 год.",
         },
         {
           q: "В чем разница между Starter и Business?",
-          a: "Starter — это одностраничный лендинг с основной информацией и формой связи. Business — многостраничный сайт с отдельными разделами, расширенным функционалом и большим количеством правок."
+          a: "Starter — это одностраничный лендинг с основной информацией и формой связи. Business — многостраничный сайт с отдельными разделами, расширенным функционалом и большим количеством правок.",
         },
         {
           q: "Сколько стоит домен?",
-          a: "Домен .uz включен в стоимость. Для международных доменов .com, .net и других потребуется доплата. Покупку и настройку домена мы берем на себя."
+          a: "Домен .uz включен в стоимость. Для международных доменов .com, .net и других потребуется доплата. Покупку и настройку домена мы берем на себя.",
         },
         {
           q: "Какие сроки?",
-          a: "Тариф Starter — 5-7 рабочих дней, Business — 10-14 рабочих дней. Для сложных проектов сроки обговариваются отдельно."
+          a: "Тариф Starter — 3-5 рабочих дней, Business — 7-10 рабочих дней. Для сложных проектов сроки обговариваются отдельно.",
         },
         {
           q: "Что включает поддержка?",
-          a: "В течение 1 года поддержки: решение технических проблем, мелкие изменения и консультации. Крупные изменения оцениваются отдельно."
+          a: "В течение 1 года поддержки: решение технических проблем, мелкие изменения и консультации. Крупные изменения оцениваются отдельно.",
         },
         {
           q: "Как работает Telegram бот?",
-          a: "Через Telegram бота можно принимать заказы, автоматически отвечать клиентам, организовать систему бронирования и автоматизировать бизнес-процессы. Цена зависит от функционала."
+          a: "Через Telegram бота можно принимать заказы, автоматически отвечать клиентам, организовать систему бронирования и автоматизировать бизнес-процессы. Цена зависит от функционала.",
         },
         {
           q: "Как происходит оплата?",
-          a: "50% предоплата, остальные 50% после завершения проекта. Оплата наличными, картой или банковским переводом."
+          a: "50% предоплата, остальные 50% после завершения проекта. Оплата наличными, картой или банковским переводом.",
         },
         {
           q: "Хостинг тоже включен?",
-          a: "Да, для простых сайтов предоставляем бесплатный хостинг на 1 год. Для сложных сайтов и Telegram ботов deploy и хостинг оплачиваются дополнительно."
-        }
-      ]
+          a: "Да, для простых сайтов предоставляем бесплатный хостинг на 1 год. Для сложных сайтов и Telegram ботов deploy и хостинг оплачиваются дополнительно.",
+        },
+      ],
     },
     contact: {
       title: "Связаться",
@@ -460,7 +479,7 @@ const dictionaries: Record<Locale, Dictionary> = {
       phoneLabel: "Телефон",
       telegramLabel: "Telegram",
       starterSummary: "Лендинг + домен + 1 год поддержки",
-      businessSummary: "Многостраничный + домен + 1 год поддержки"
+      businessSummary: "Многостраничный + домен + 1 год поддержки",
     },
     footer: {
       tagline: "Выведем ваш бизнес в онлайн",
@@ -470,12 +489,12 @@ const dictionaries: Record<Locale, Dictionary> = {
         "Многостраничные сайты",
         "Telegram боты",
         "E-commerce",
-        "CRM системы"
+        "CRM системы",
       ],
       contact: "Контакты",
-      rights: "Все права защищены"
-    }
-  }
+      rights: "Все права защищены",
+    },
+  },
 };
 
 export const getDictionary = (locale: Locale) => dictionaries[locale];

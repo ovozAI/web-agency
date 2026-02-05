@@ -30,13 +30,14 @@ export const demos: Demo[] = [
     slug: "mebel",
     title: { uz: "Mebel", ru: "Mebel" },
     description: {
-      uz: "Mebel do'koni uchun veb sahifa",
+      uz: "Mebel do'koni uchun veb-sayt",
       ru: "Веб страница для мебельного магазина.",
     },
     url: "/demos/mebel/index.html",
     preview: "/demos/mebel/mebel.png",
     badges: [{ text: { uz: "Web", ru: "Web" }, color: "ocean" }],
   },
+
   {
     slug: "eclinic",
     title: { uz: "eClinic", ru: "eClinic" },
@@ -58,10 +59,21 @@ export const demos: Demo[] = [
     ],
   },
   {
+    slug: "trucking",
+    title: { uz: "Atlas logistics", ru: "Atlas logistics" },
+    description: {
+      uz: "Yuk tashuvchi logistika kompaniyasi uchun veb-sayt",
+      ru: "Веб страница для логистической компании.",
+    },
+    url: "/demos/trucking/index.html",
+    preview: "/demos/trucking/trucking.png",
+    badges: [{ text: { uz: "Web", ru: "Web" }, color: "ocean" }],
+  },
+  {
     slug: "estetic",
     title: { uz: "Estetic medical", ru: "Estetic medical" },
     description: {
-      uz: "Xususiy klinika uchun veb sahifa",
+      uz: "Xususiy klinika uchun veb-sayt",
       ru: "Веб страница для частной клиники.",
     },
     url: "https://estetic.uz",
@@ -72,7 +84,7 @@ export const demos: Demo[] = [
     slug: "clothing",
     title: { uz: "Clothing", ru: "Clothing" },
     description: {
-      uz: "Kiyim do'koni uchun veb sahifa",
+      uz: "Kiyim do'koni uchun veb-sayt",
       ru: "Веб страница для магазина одежды.",
     },
     url: "/demos/clothing/index.html",
@@ -86,7 +98,7 @@ export const demos: Demo[] = [
     slug: "ovozai",
     title: { uz: "ovozAI", ru: "ovozAI" },
     description: {
-      uz: "AI call-center samaradorligi analitikasi va real-time transkripsiya.",
+      uz: "AI call-markaz samaradorlik tahlili va real vaqtda transkripsiya.",
       ru: "AI аналитика колл-центра и real-time транскрипция.",
     },
     url: "https://ovozai.uz",
@@ -101,7 +113,7 @@ export const demos: Demo[] = [
     slug: "market",
     title: { uz: "Market", ru: "Market" },
     description: {
-      uz: "Supermarket uchun veb sahifa",
+      uz: "Supermarket uchun veb-sayt",
       ru: "Веб страница для супермаркета.",
     },
     url: "/demos/market/index.html",
@@ -112,7 +124,7 @@ export const demos: Demo[] = [
     slug: "spendai",
     title: { uz: "SpendAI", ru: "SpendAI" },
     description: {
-      uz: "AI-bilan xarajat kuzatish va kategorilash.",
+      uz: "AI yordamida xarajatlarni kuzatish va toifalash.",
       ru: "AI-поверх трекинг и категоризация расходов.",
     },
     url: "https://t.me/spendai_bot",
@@ -126,7 +138,7 @@ export const demos: Demo[] = [
     slug: "ovozai-bot",
     title: { uz: "ovozAI Bot", ru: "ovozAI Bot" },
     description: {
-      uz: "Ko'p tildagi ovoz xabar transkripsiyasi Telegram bot.",
+      uz: "Ko'p tilli ovozli xabarlarni transkripsiya qiluvchi Telegram bot.",
       ru: "Многоязыковая транскрипция голосовых сообщений в Telegram.",
     },
     url: "https://t.me/ovoz_aibot",
@@ -141,7 +153,7 @@ export const demos: Demo[] = [
     slug: "watchdomain-bot",
     title: { uz: "WatchDomain Bot", ru: "WatchDomain Bot" },
     description: {
-      uz: "Domenlarni kuzatish va tugallanish oldingi bildirishnoma.",
+      uz: "Domenlarni kuzatish va muddati tugashidan oldin ogohlantirish.",
       ru: "Отслеживание доменов и уведомления перед истечением.",
     },
     url: "https://t.me/watchdomainbot",

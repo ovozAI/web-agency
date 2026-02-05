@@ -1,0 +1,579 @@
+<!doctype html>
+
+<html class="light" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Atlas Logistics - Minimalist Professional Trucking</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700;900&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#137fec",
+              "background-light": "#f6f7f8",
+              "background-dark": "#101922",
+            },
+            fontFamily: {
+              display: ["Work Sans"],
+            },
+            borderRadius: {
+              DEFAULT: "0.25rem",
+              lg: "0.5rem",
+              xl: "0.75rem",
+              full: "9999px",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body
+    class="bg-background-light dark:bg-background-dark font-display text-[#111418] dark:text-white transition-colors duration-300"
+  >
+    <div
+      class="relative flex h-auto min-h-screen w-full flex-col overflow-x-hidden"
+    >
+      <!-- Header/Navigation -->
+      <header
+        class="sticky top-0 z-50 bg-white/80 dark:bg-background-dark/80 backdrop-blur-md border-b border-solid border-[#f0f2f4] dark:border-gray-800 px-6 lg:px-40 py-4"
+      >
+        <div class="max-w-[1200px] mx-auto flex items-center justify-between">
+          <div class="flex items-center gap-3">
+            <div class="text-primary">
+              <span class="material-symbols-outlined text-3xl">explore</span>
+            </div>
+            <h2
+              class="text-[#111418] dark:text-white text-xl font-bold leading-tight tracking-tight"
+            >
+              Atlas Logistics
+            </h2>
+          </div>
+          <div class="flex items-center gap-10">
+            <nav class="hidden md:flex items-center gap-8">
+              <a
+                class="text-[#111418] dark:text-gray-300 text-sm font-medium hover:text-primary transition-colors"
+                href="#"
+                >Services</a
+              >
+              <a
+                class="text-[#111418] dark:text-gray-300 text-sm font-medium hover:text-primary transition-colors"
+                href="#"
+                >Journey</a
+              >
+              <a
+                class="text-[#111418] dark:text-gray-300 text-sm font-medium hover:text-primary transition-colors"
+                href="#"
+                >Careers</a
+              >
+              <a
+                class="text-[#111418] dark:text-gray-300 text-sm font-medium hover:text-primary transition-colors"
+                href="#"
+                >About</a
+              >
+            </nav>
+            <button
+              class="flex min-w-[120px] cursor-pointer items-center justify-center rounded-lg h-10 px-5 bg-primary text-white text-sm font-bold hover:bg-primary/90 transition-all"
+            >
+              Get a Quote
+            </button>
+          </div>
+        </div>
+      </header>
+      <main class="flex-1">
+        <!-- Hero Section -->
+        <section class="max-w-[1200px] mx-auto px-6 lg:px-10 py-16 lg:py-24">
+          <div class="grid lg:grid-cols-2 gap-12 items-center">
+            <div class="flex flex-col gap-8 order-2 lg:order-1">
+              <div class="flex flex-col gap-4">
+                <span
+                  class="text-primary font-bold tracking-widest text-xs uppercase"
+                  >Precision in Motion</span
+                >
+                <h1
+                  class="text-[#111418] dark:text-white text-5xl lg:text-7xl font-black leading-[1.1] tracking-tight"
+                >
+                  Logistics Redefined by Reliability
+                </h1>
+                <p
+                  class="text-[#617589] dark:text-gray-400 text-lg lg:text-xl font-normal max-w-[500px] leading-relaxed"
+                >
+                  Experience a seamless journey from pickup to delivery. We
+                  prioritize your cargo and our drivers through minimalist
+                  efficiency and human connection.
+                </p>
+              </div>
+              <div class="flex flex-wrap gap-4">
+                <button
+                  class="flex min-w-[160px] cursor-pointer items-center justify-center rounded-lg h-14 px-6 bg-primary text-white text-base font-bold shadow-lg shadow-primary/20 hover:translate-y-[-2px] transition-all"
+                >
+                  View Our Services
+                </button>
+                <button
+                  class="flex min-w-[160px] cursor-pointer items-center justify-center rounded-lg h-14 px-6 border-2 border-[#dbe0e6] dark:border-gray-700 text-[#111418] dark:text-white text-base font-bold hover:bg-gray-50 dark:hover:bg-gray-800 transition-all"
+                >
+                  Contact Us
+                </button>
+              </div>
+            </div>
+            <div class="order-1 lg:order-2">
+              <div
+                class="relative w-full aspect-[4/5] bg-center bg-no-repeat bg-cover rounded-2xl overflow-hidden shadow-2xl"
+                data-alt="Modern semi truck for logistics and transportation"
+                style="
+                  background-image: url(&quot;https://images.unsplash.com/photo-1616432043562-3671ea2e5242?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM5NDJ8MHwxfHNlYXJjaHwxfHxzZW1pJTIwdHJ1Y2t8ZW58MHwxfHx8MTc3MDMzMTIzM3ww&ixlib=rb-4.1.0&q=80&w=1080&quot;);
+                "
+              >
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"
+                ></div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Stats / Social Proof -->
+        <section
+          class="bg-white dark:bg-background-dark py-12 border-y border-[#f0f2f4] dark:border-gray-800"
+        >
+          <div
+            class="max-w-[1200px] mx-auto px-6 flex flex-wrap justify-between items-center gap-8"
+          >
+            <div class="flex flex-col items-center md:items-start">
+              <span class="text-3xl font-black text-[#111418] dark:text-white"
+                >99.8%</span
+              >
+              <span class="text-sm font-medium text-[#617589]"
+                >On-time Delivery</span
+              >
+            </div>
+            <div class="flex flex-col items-center md:items-start">
+              <span class="text-3xl font-black text-[#111418] dark:text-white"
+                >500+</span
+              >
+              <span class="text-sm font-medium text-[#617589]"
+                >Active Fleet</span
+              >
+            </div>
+            <div class="flex flex-col items-center md:items-start">
+              <span class="text-3xl font-black text-[#111418] dark:text-white"
+                >24/7</span
+              >
+              <span class="text-sm font-medium text-[#617589]"
+                >Real-time Support</span
+              >
+            </div>
+            <div class="flex flex-col items-center md:items-start">
+              <span class="text-3xl font-black text-[#111418] dark:text-white"
+                >15+</span
+              >
+              <span class="text-sm font-medium text-[#617589]"
+                >Years Experience</span
+              >
+            </div>
+          </div>
+        </section>
+        <!-- The Journey Section -->
+        <section class="max-w-[1200px] mx-auto px-6 py-24">
+          <div class="flex flex-col items-center text-center mb-16">
+            <h2 class="text-[#111418] dark:text-white text-4xl font-black mb-4">
+              The Atlas Journey
+            </h2>
+            <p class="text-[#617589] max-w-[600px]">
+              We've simplified the complex world of logistics into a seamless,
+              four-step process designed for transparency.
+            </p>
+          </div>
+          <div class="grid lg:grid-cols-2 gap-20 items-start">
+            <div class="flex flex-col gap-0">
+              <!-- Step 1 -->
+              <div class="grid grid-cols-[60px_1fr] gap-x-6">
+                <div class="flex flex-col items-center">
+                  <div
+                    class="flex items-center justify-center size-10 rounded-full bg-primary text-white font-bold"
+                  >
+                    1
+                  </div>
+                  <div class="w-[2px] bg-primary/20 h-40"></div>
+                </div>
+                <div class="pt-1 pb-16">
+                  <h3
+                    class="text-[#111418] dark:text-white text-2xl font-bold mb-2"
+                  >
+                    Scheduled Pickup
+                  </h3>
+                  <p class="text-[#617589] dark:text-gray-400 text-base mb-6">
+                    Our drivers arrive precisely when scheduled, ensuring your
+                    production timeline remains uninterrupted.
+                  </p>
+                  <div
+                    class="w-full aspect-video rounded-xl bg-cover bg-center"
+                    data-alt="Close up of a driver loading cargo into a clean truck trailer"
+                    style="
+                      background-image: url(&quot;https://images.unsplash.com/photo-1700716465891-9e5e9f501d7d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM5NDJ8MHwxfHNlYXJjaHwxfHxsb2FkaW5nJTIwdHJ1Y2slMjBjYXJnb3xlbnwwfDB8fHwxNzcwMzMwNzQ5fDA&ixlib=rb-4.1.0&q=80&w=1080&quot;);
+                    "
+                  ></div>
+                </div>
+              </div>
+              <!-- Step 2 -->
+              <div class="grid grid-cols-[60px_1fr] gap-x-6">
+                <div class="flex flex-col items-center">
+                  <div
+                    class="flex items-center justify-center size-10 rounded-full bg-primary text-white font-bold"
+                  >
+                    2
+                  </div>
+                  <div class="w-[2px] bg-primary/20 h-40"></div>
+                </div>
+                <div class="pt-1 pb-16">
+                  <h3
+                    class="text-[#111418] dark:text-white text-2xl font-bold mb-2"
+                  >
+                    Safe Transit
+                  </h3>
+                  <p class="text-[#617589] dark:text-gray-400 text-base mb-6">
+                    Expert handling on the open road with our state-of-the-art
+                    safety technology and veteran drivers.
+                  </p>
+                  <div
+                    class="w-full aspect-video rounded-xl bg-cover bg-center"
+                    data-alt="A semi truck driving on a scenic highway at sunset"
+                    style="
+                      background-image: url(&quot;https://images.unsplash.com/photo-1632248773273-0152ece8d2d5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM5NDJ8MHwxfHNlYXJjaHwxfHxzZW1pJTIwdHJ1Y2slMjBoaWdod2F5JTIwc3Vuc2V0fGVufDB8MHx8fDE3NzAzMzA3NTF8MA&ixlib=rb-4.1.0&q=80&w=1080&quot;);
+                    "
+                  ></div>
+                </div>
+              </div>
+              <!-- Step 3 -->
+              <div class="grid grid-cols-[60px_1fr] gap-x-6">
+                <div class="flex flex-col items-center">
+                  <div
+                    class="flex items-center justify-center size-10 rounded-full bg-primary text-white font-bold"
+                  >
+                    3
+                  </div>
+                  <div class="w-[2px] bg-primary/20 h-40"></div>
+                </div>
+                <div class="pt-1 pb-16">
+                  <h3
+                    class="text-[#111418] dark:text-white text-2xl font-bold mb-2"
+                  >
+                    Real-time Tracking
+                  </h3>
+                  <p class="text-[#617589] dark:text-gray-400 text-base mb-6">
+                    Total visibility for peace of mind. Monitor your shipment
+                    every mile of the way through our digital portal.
+                  </p>
+                  <div
+                    class="w-full aspect-video rounded-xl bg-cover bg-center"
+                    data-alt="Modern tablet showing a GPS tracking map with truck icons"
+                    style="
+                      background-image: url(&quot;https://images.unsplash.com/photo-1757310998648-f8aaa5572e8e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM5NDJ8MHwxfHNlYXJjaHwxfHxncHMlMjB0cmFja2luZyUyMHRhYmxldHxlbnwwfDB8fHwxNzcwMzMwNzU0fDA&ixlib=rb-4.1.0&q=80&w=1080&quot;);
+                    "
+                  ></div>
+                </div>
+              </div>
+              <!-- Step 4 -->
+              <div class="grid grid-cols-[60px_1fr] gap-x-6">
+                <div class="flex flex-col items-center">
+                  <div
+                    class="flex items-center justify-center size-10 rounded-full bg-primary text-white font-bold"
+                  >
+                    4
+                  </div>
+                </div>
+                <div class="pt-1">
+                  <h3
+                    class="text-[#111418] dark:text-white text-2xl font-bold mb-2"
+                  >
+                    Successful Delivery
+                  </h3>
+                  <p class="text-[#617589] dark:text-gray-400 text-base mb-6">
+                    Final handover to satisfied partners. We handle the
+                    paperwork so you can focus on your business.
+                  </p>
+                  <div
+                    class="w-full aspect-video rounded-xl bg-cover bg-center"
+                    data-alt="Happy business owner shaking hands with a logistics driver"
+                    style="
+                      background-image: url(&quot;https://images.unsplash.com/photo-1740419014058-aa7e39329ced?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM5NDJ8MHwxfHNlYXJjaHwxfHxidXNpbmVzcyUyMGhhbmRzaGFrZSUyMGRlbGl2ZXJ5fGVufDB8MHx8fDE3NzAzMzA3NTZ8MA&ixlib=rb-4.1.0&q=80&w=1080&quot;);
+                    "
+                  ></div>
+                </div>
+              </div>
+            </div>
+            <div class="sticky top-32 hidden lg:block">
+              <div
+                class="bg-white dark:bg-background-dark p-8 rounded-2xl border border-[#f0f2f4] dark:border-gray-800 shadow-xl shadow-gray-100/50 dark:shadow-none"
+              >
+                <h4 class="text-xl font-bold mb-6">Shipment Map</h4>
+                <div
+                  class="w-full aspect-square rounded-lg bg-gray-100 dark:bg-gray-800 relative overflow-hidden"
+                >
+                  <!-- Placeholder for Map -->
+                  <div
+                    class="absolute inset-0 bg-[#e5e7eb] dark:bg-[#1f2937]"
+                    data-location="United States"
+                    style=""
+                  >
+                    <svg
+                      class="w-full h-full text-gray-300 dark:text-gray-700 opacity-50"
+                      fill="currentColor"
+                      viewbox="0 0 24 24"
+                    >
+                      <path
+                        d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"
+                      ></path>
+                    </svg>
+                  </div>
+                </div>
+                <div class="mt-6 space-y-4">
+                  <div class="flex items-center justify-between">
+                    <span class="text-sm font-medium text-[#617589]"
+                      >Active Shipments</span
+                    >
+                    <span class="text-sm font-bold">1,248</span>
+                  </div>
+                  <div class="flex items-center justify-between">
+                    <span class="text-sm font-medium text-[#617589]"
+                      >Fuel Efficiency</span
+                    >
+                    <span class="text-sm font-bold">94%</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Join Our Team Section -->
+        <section class="bg-primary/5 dark:bg-primary/10 py-24">
+          <div class="max-w-[1200px] mx-auto px-6">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+              <div class="grid grid-cols-2 gap-4">
+                <div class="flex flex-col gap-4">
+                  <div
+                    class="aspect-[4/5] rounded-2xl overflow-hidden bg-cover bg-center"
+                    data-alt="Modern high-tech truck interior with comfortable seating"
+                    style="
+                      background-image: url(&quot;https://images.unsplash.com/photo-1769253678069-a35aebb89e0e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM5NDJ8MHwxfHNlYXJjaHwxfHxjYXIlMjBpbnRlcmlvciUyMGx1eHVyeXxlbnwwfDF8fHwxNzcwMzMwNzcwfDA&ixlib=rb-4.1.0&q=80&w=1080&quot;);
+                    "
+                  ></div>
+                  <div
+                    class="aspect-square rounded-2xl overflow-hidden bg-cover bg-center"
+                    data-alt="Clean and spacious driver breakroom with coffee station"
+                    style="
+                      background-image: url(&quot;https://images.unsplash.com/photo-1692460830435-c326502f2574?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM5NDJ8MHwxfHNlYXJjaHwyfHxvZmZpY2UlMjBicmVhayUyMHJvb218ZW58MHx8fHwxNzcwMzMwNzg4fDA&ixlib=rb-4.1.0&q=80&w=1080&quot;);
+                    "
+                  ></div>
+                </div>
+                <div class="flex flex-col gap-4 mt-12">
+                  <div
+                    class="aspect-square rounded-2xl overflow-hidden bg-cover bg-center"
+                    data-alt="Professional truck driver checking tablet next to truck"
+                    style="
+                      background-image: url(&quot;https://images.unsplash.com/photo-1664382953403-fc1ac77073a0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM5NDJ8MHwxfHNlYXJjaHwxfHx3YXJlaG91c2UlMjB3b3JrZXJ8ZW58MHx8fHwxNzcwMzMwNzg5fDA&ixlib=rb-4.1.0&q=80&w=1080&quot;);
+                    "
+                  ></div>
+                  <div
+                    class="aspect-[4/5] rounded-2xl overflow-hidden bg-cover bg-center"
+                    data-alt="A row of brand new white Atlas semi trucks in a lot"
+                    style="
+                      background-image: url(&quot;https://images.unsplash.com/photo-1759671934974-a4928e049dec?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM5NDJ8MHwxfHNlYXJjaHwxfHx0cnVja3MlMjB0cmFuc3BvcnRhdGlvbnxlbnwwfDF8fHwxNzcwMzMwNzgzfDA&ixlib=rb-4.1.0&q=80&w=1080&quot;);
+                    "
+                  ></div>
+                </div>
+              </div>
+              <div class="flex flex-col gap-8">
+                <div>
+                  <span
+                    class="text-primary font-bold tracking-widest text-xs uppercase"
+                    >Careers</span
+                  >
+                  <h2
+                    class="text-[#111418] dark:text-white text-4xl lg:text-5xl font-black mt-4 mb-6"
+                  >
+                    Drive for a Team That Cares
+                  </h2>
+                  <p
+                    class="text-[#617589] dark:text-gray-400 text-lg leading-relaxed"
+                  >
+                    Our drivers are the heart of Atlas. We provide
+                    industry-leading benefits, the newest trucks on the road,
+                    and a culture that respects your time and your family.
+                  </p>
+                </div>
+                <ul class="space-y-4">
+                  <li class="flex items-center gap-3">
+                    <span class="material-symbols-outlined text-primary"
+                      >check_circle</span
+                    >
+                    <span class="font-medium"
+                      >Top-tier health and retirement plans</span
+                    >
+                  </li>
+                  <li class="flex items-center gap-3">
+                    <span class="material-symbols-outlined text-primary"
+                      >check_circle</span
+                    >
+                    <span class="font-medium"
+                      >Predictable home time schedules</span
+                    >
+                  </li>
+                  <li class="flex items-center gap-3">
+                    <span class="material-symbols-outlined text-primary"
+                      >check_circle</span
+                    >
+                    <span class="font-medium"
+                      >Performance and safety bonuses</span
+                    >
+                  </li>
+                </ul>
+                <button
+                  class="flex min-w-[200px] max-w-max cursor-pointer items-center justify-center rounded-lg h-14 px-8 bg-primary text-white text-base font-bold hover:scale-[1.02] transition-all"
+                >
+                  Explore Career Openings
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- CTA Section -->
+        <section class="max-w-[1200px] mx-auto px-6 py-24">
+          <div
+            class="bg-background-dark rounded-[2rem] p-12 lg:p-20 text-center relative overflow-hidden"
+          >
+            <div
+              class="absolute inset-0 bg-primary/10 pointer-events-none"
+            ></div>
+            <div class="relative z-10 flex flex-col items-center gap-8">
+              <h2
+                class="text-white text-4xl lg:text-6xl font-black max-w-[800px]"
+              >
+                Ready to optimize your supply chain?
+              </h2>
+              <p class="text-gray-400 text-xl max-w-[600px]">
+                Join hundreds of leading companies who trust Atlas Logistics for
+                their most critical freight.
+              </p>
+              <div class="flex flex-wrap justify-center gap-4">
+                <button
+                  class="flex min-w-[180px] cursor-pointer items-center justify-center rounded-lg h-14 px-8 bg-white text-primary text-base font-bold hover:bg-gray-100 transition-all"
+                >
+                  Get a Quote Now
+                </button>
+                <button
+                  class="flex min-w-[180px] cursor-pointer items-center justify-center rounded-lg h-14 px-8 border border-white/20 text-white text-base font-bold hover:bg-white/10 transition-all"
+                >
+                  Speak to an Agent
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <!-- Footer -->
+      <footer
+        class="bg-white dark:bg-background-dark border-t border-[#f0f2f4] dark:border-gray-800 pt-20 pb-10 px-6 lg:px-40"
+      >
+        <div
+          class="max-w-[1200px] mx-auto grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-20"
+        >
+          <div class="flex flex-col gap-6">
+            <div class="flex items-center gap-3">
+              <div class="text-primary">
+                <span class="material-symbols-outlined text-3xl">explore</span>
+              </div>
+              <h2 class="text-[#111418] dark:text-white text-xl font-bold">
+                Atlas Logistics
+              </h2>
+            </div>
+            <p class="text-[#617589] text-sm leading-relaxed">
+              Setting the standard for reliability in logistics since 2008.
+              Driving progress across the nation.
+            </p>
+          </div>
+          <div>
+            <h4 class="font-bold mb-6">Services</h4>
+            <ul class="space-y-4 text-sm text-[#617589]">
+              <li>
+                <a class="hover:text-primary" href="#">Freight Transport</a>
+              </li>
+              <li>
+                <a class="hover:text-primary" href="#">Warehouse Solutions</a>
+              </li>
+              <li>
+                <a class="hover:text-primary" href="#">Last-mile Delivery</a>
+              </li>
+              <li>
+                <a class="hover:text-primary" href="#"
+                  >Supply Chain Consulting</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="font-bold mb-6">Company</h4>
+            <ul class="space-y-4 text-sm text-[#617589]">
+              <li><a class="hover:text-primary" href="#">About Us</a></li>
+              <li><a class="hover:text-primary" href="#">Careers</a></li>
+              <li>
+                <a class="hover:text-primary" href="#">News &amp; Press</a>
+              </li>
+              <li><a class="hover:text-primary" href="#">Safety Record</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="font-bold mb-6">Contact</h4>
+            <ul class="space-y-4 text-sm text-[#617589]">
+              <li class="flex items-center gap-2">
+                <span class="material-symbols-outlined text-sm">mail</span>
+                contact@atlaslogistics.com
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="material-symbols-outlined text-sm">phone</span> +1
+                (800) 555-0123
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="material-symbols-outlined text-sm"
+                  >location_on</span
+                >
+                1200 Atlas Way, Chicago, IL
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div
+          class="max-w-[1200px] mx-auto pt-8 border-t border-[#f0f2f4] dark:border-gray-800 flex flex-col md:flex-row justify-between items-center gap-4"
+        >
+          <p class="text-[#617589] text-xs">
+            © 2024 Atlas Logistics. All rights reserved.
+          </p>
+          <div class="flex gap-6">
+            <a class="text-[#617589] hover:text-primary text-xs" href="#"
+              >Privacy Policy</a
+            >
+            <a class="text-[#617589] hover:text-primary text-xs" href="#"
+              >Terms of Service</a
+            >
+            <a class="text-[#617589] hover:text-primary text-xs" href="#"
+              >Cookies</a
+            >
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
