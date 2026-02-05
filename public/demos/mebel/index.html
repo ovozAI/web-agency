@@ -1,0 +1,731 @@
+<!doctype html>
+<html class="light" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Dane Design - Heritage &amp; Living</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600&amp;family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#2d3748",
+              secondary: "#a0aec0",
+              accent: "#c4a484",
+              "background-light": "#ffffff",
+              "background-off": "#f9fafb",
+              "background-dark": "#111921",
+              "text-main": "#1a202c",
+              "text-muted": "#718096",
+            },
+            fontFamily: {
+              sans: ["Manrope", "sans-serif"],
+              serif: ["Playfair Display", "serif"],
+            },
+            borderRadius: {
+              DEFAULT: "0.25rem",
+              lg: "0.5rem",
+              xl: "0.75rem",
+              "2xl": "1rem",
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      .fade-in-up {
+        animation: fadeInUp 1s ease-out forwards;
+      }
+      @keyframes fadeInUp {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+    </style>
+  </head>
+  <body
+    class="bg-background-light dark:bg-background-dark font-sans text-text-main dark:text-white overflow-x-hidden antialiased selection:bg-accent selection:text-white"
+  >
+    <nav
+      class="fixed w-full z-50 bg-white/90 dark:bg-[#1a2632]/90 backdrop-blur-md border-b border-gray-100 dark:border-[#2a3642] transition-all duration-300"
+    >
+      <div class="max-w-[1440px] mx-auto px-6 md:px-12 py-4">
+        <div class="flex items-center justify-between">
+          <div class="flex items-center gap-3">
+            <span
+              class="material-symbols-outlined text-3xl text-text-main dark:text-white"
+              >chair</span
+            >
+            <h1
+              class="text-xl font-serif font-bold tracking-tight text-text-main dark:text-white"
+            >
+              Dane Design
+            </h1>
+          </div>
+          <div class="hidden md:flex items-center gap-10">
+            <a
+              class="text-sm font-medium hover:text-accent transition-colors"
+              href="#"
+              >Collections</a
+            >
+            <a
+              class="text-sm font-medium hover:text-accent transition-colors"
+              href="#"
+              >Designers</a
+            >
+            <a
+              class="text-sm font-medium hover:text-accent transition-colors"
+              href="#"
+              >Craftsmanship</a
+            >
+            <a
+              class="text-sm font-medium hover:text-accent transition-colors"
+              href="#"
+              >Journal</a
+            >
+          </div>
+          <div class="flex items-center gap-6">
+            <button
+              class="hidden lg:block text-sm font-medium hover:text-accent transition-colors"
+            >
+              Search
+            </button>
+            <button class="relative group">
+              <span class="material-symbols-outlined text-[24px]"
+                >shopping_bag</span
+              >
+              <span
+                class="absolute -top-1 -right-1 flex h-4 w-4 items-center justify-center rounded-full bg-accent text-[10px] text-white"
+                >0</span
+              >
+            </button>
+            <button class="md:hidden">
+              <span class="material-symbols-outlined text-[24px]">menu</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <header
+      class="relative w-full h-screen min-h-[700px] flex items-center justify-center overflow-hidden"
+    >
+      <div class="absolute inset-0 z-0">
+        <img
+          alt="Curated mid-century modern interior"
+          class="w-full h-full object-cover object-center"
+          src="/demos/mebel/2.jpeg"
+        />
+        <div class="absolute inset-0 bg-black/30"></div>
+      </div>
+      <div
+        class="relative z-10 container mx-auto px-6 text-center text-white fade-in-up"
+      >
+        <p
+          class="text-sm md:text-base font-medium tracking-[0.2em] uppercase mb-6 text-white/90"
+        >
+          Est. 1958 • Copenhagen
+        </p>
+        <h2
+          class="font-serif text-5xl md:text-7xl lg:text-8xl leading-tight mb-8"
+        >
+          The Art of <br />
+          <span class="italic">Scandinavian Living</span>
+        </h2>
+        <p
+          class="max-w-xl mx-auto text-lg md:text-xl text-white/90 font-light mb-10 leading-relaxed"
+        >
+          Curating a legacy of timeless design, where functionality meets beauty
+          in every curve and joint.
+        </p>
+        <div class="flex flex-col md:flex-row gap-4 justify-center">
+          <a
+            class="inline-flex items-center justify-center px-8 py-4 bg-white text-text-main font-medium rounded-none hover:bg-gray-100 transition-colors min-w-[180px]"
+            href="#"
+          >
+            Explore Collection
+          </a>
+          <a
+            class="inline-flex items-center justify-center px-8 py-4 border border-white text-white font-medium rounded-none hover:bg-white/10 transition-colors min-w-[180px]"
+            href="#"
+          >
+            Our Philosophy
+          </a>
+        </div>
+      </div>
+      <div
+        class="absolute bottom-10 left-1/2 transform -translate-x-1/2 text-white animate-bounce"
+      >
+        <span class="material-symbols-outlined">keyboard_arrow_down</span>
+      </div>
+    </header>
+    <section class="py-24 bg-background-light dark:bg-background-dark">
+      <div class="max-w-6xl mx-auto px-6 md:px-12">
+        <div class="text-center mb-20">
+          <h3
+            class="font-serif text-3xl md:text-4xl text-text-main dark:text-white mb-4"
+          >
+            Design Philosophy
+          </h3>
+          <div class="w-16 h-0.5 bg-accent mx-auto"></div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-12 text-center">
+          <div class="flex flex-col items-center gap-4 group cursor-pointer">
+            <div
+              class="w-16 h-16 rounded-full bg-background-off flex items-center justify-center mb-2 group-hover:bg-accent/10 transition-colors"
+            >
+              <span
+                class="material-symbols-outlined text-4xl text-text-main dark:text-white font-light"
+                >spa</span
+              >
+            </div>
+            <h4 class="font-serif text-xl font-semibold">Simplicity</h4>
+            <p class="text-text-muted leading-relaxed">
+              Stripping away the unnecessary to reveal the pure essence of form
+              and function. Minimalist, yet warm.
+            </p>
+          </div>
+          <div class="flex flex-col items-center gap-4 group cursor-pointer">
+            <div
+              class="w-16 h-16 rounded-full bg-background-off flex items-center justify-center mb-2 group-hover:bg-accent/10 transition-colors"
+            >
+              <span
+                class="material-symbols-outlined text-4xl text-text-main dark:text-white font-light"
+                >handyman</span
+              >
+            </div>
+            <h4 class="font-serif text-xl font-semibold">Craftsmanship</h4>
+            <p class="text-text-muted leading-relaxed">
+              Honoring traditional joinery and natural materials that age
+              gracefully over time, telling a story of their own.
+            </p>
+          </div>
+          <div class="flex flex-col items-center gap-4 group cursor-pointer">
+            <div
+              class="w-16 h-16 rounded-full bg-background-off flex items-center justify-center mb-2 group-hover:bg-accent/10 transition-colors"
+            >
+              <span
+                class="material-symbols-outlined text-4xl text-text-main dark:text-white font-light"
+                >all_inclusive</span
+              >
+            </div>
+            <h4 class="font-serif text-xl font-semibold">Timelessness</h4>
+            <p class="text-text-muted leading-relaxed">
+              Investing in pieces that transcend trends. Furniture designed to
+              be passed down, not thrown away.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="py-24 bg-background-off dark:bg-[#151f28]">
+      <div class="max-w-[1440px] mx-auto px-6 md:px-12">
+        <div class="flex flex-col lg:flex-row items-center gap-16 lg:gap-24">
+          <div class="w-full lg:w-1/2 relative">
+            <div class="aspect-[4/3] overflow-hidden rounded-sm">
+              <img
+                alt="Close up of wood grain on teak sideboard"
+                class="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCOwUZK4fNXGL-2P-u_m_hZyl8D5l_GcRGW64W-WtqwlFPfHPfBbWpxSm70BofH0HQcStc_trz0B_Hv4-42PcOyDA5cZSGgW4ZTWFQ0Py1-_pzKjjObaPn31bXqiXALVi_eMt8pnJ-b67-zZytqmePcKGJa69JXIPfQcWQxt2TqSkIo40bU-rdkBMMW8LACzo240IsvHgIdgbliFqWOWUKp7HbQpdn483XpGzS2jziL07MgGl1KOuj8Rwz9KerNMdl1pKibp6EaMug"
+              />
+            </div>
+            <div
+              class="hidden lg:block absolute -bottom-8 -left-8 w-48 h-48 bg-white dark:bg-[#2a3642] p-6 z-10 shadow-lg"
+            >
+              <div
+                class="h-full border border-gray-100 dark:border-gray-600 flex flex-col items-center justify-center text-center"
+              >
+                <span class="block font-serif text-3xl text-accent mb-1"
+                  >100%</span
+                >
+                <span class="text-xs uppercase tracking-widest text-text-muted"
+                  >Solid Wood</span
+                >
+              </div>
+            </div>
+          </div>
+          <div class="w-full lg:w-1/2 space-y-8">
+            <span
+              class="text-accent uppercase tracking-widest text-sm font-semibold"
+              >The Materials</span
+            >
+            <h2
+              class="font-serif text-4xl md:text-5xl text-text-main dark:text-white leading-tight"
+            >
+              Honest materials, <br />exceptional hands.
+            </h2>
+            <p class="text-text-muted text-lg leading-relaxed">
+              We believe that the soul of furniture lies in its material. We
+              strictly source sustainable Oak, Teak, and Walnut, chosen for
+              their distinctive grain patterns and durability.
+            </p>
+            <div class="space-y-6">
+              <div class="flex items-start gap-4">
+                <span class="material-symbols-outlined text-accent mt-1"
+                  >check_circle</span
+                >
+                <div>
+                  <h4 class="font-serif text-lg text-text-main dark:text-white">
+                    Traditional Joinery
+                  </h4>
+                  <p class="text-sm text-text-muted mt-1">
+                    Mortise and tenon joints ensure longevity without reliance
+                    on modern adhesives.
+                  </p>
+                </div>
+              </div>
+              <div class="flex items-start gap-4">
+                <span class="material-symbols-outlined text-accent mt-1"
+                  >check_circle</span
+                >
+                <div>
+                  <h4 class="font-serif text-lg text-text-main dark:text-white">
+                    Hand-Rubbed Finishes
+                  </h4>
+                  <p class="text-sm text-text-muted mt-1">
+                    Natural oils that protect the wood while allowing it to
+                    breathe and age beautifully.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="pt-4">
+              <a
+                class="text-text-main dark:text-white border-b border-black dark:border-white pb-1 hover:text-accent hover:border-accent transition-all font-medium"
+                href="#"
+                >Read about our process</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="py-24 bg-white dark:bg-background-dark">
+      <div class="max-w-[1440px] mx-auto px-6 md:px-12">
+        <div
+          class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6"
+        >
+          <div>
+            <span
+              class="text-accent uppercase tracking-widest text-sm font-semibold block mb-2"
+              >Icons of Design</span
+            >
+            <h2 class="font-serif text-4xl text-text-main dark:text-white">
+              Featured Designers
+            </h2>
+          </div>
+          <a
+            class="hidden md:flex items-center gap-2 text-text-muted hover:text-text-main transition-colors"
+            href="#"
+          >
+            View all designers
+            <span class="material-symbols-outlined text-sm">arrow_forward</span>
+          </a>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div
+            class="group relative bg-background-off dark:bg-[#1a2632] p-10 flex flex-col items-start justify-between min-h-[320px] hover:shadow-xl transition-all duration-300"
+          >
+            <div
+              class="absolute top-0 right-0 p-6 opacity-10 group-hover:opacity-20 transition-opacity"
+            >
+              <span class="material-symbols-outlined text-9xl">chair_alt</span>
+            </div>
+            <div class="relative z-10">
+              <h3
+                class="font-serif text-2xl mb-3 group-hover:text-accent transition-colors"
+              >
+                Hans J. Wegner
+              </h3>
+              <p class="text-text-muted text-sm leading-relaxed mb-6">
+                Known as the "Master of the Chair", Wegner designed more than
+                500 chairs in his lifetime. His style is often described as
+                Organic Functionality, a modernist school with emphasis on
+                functionality.
+              </p>
+            </div>
+            <a
+              class="relative z-10 inline-flex items-center text-sm font-bold uppercase tracking-wide border-b border-transparent group-hover:border-text-main transition-all"
+              href="#"
+            >
+              Explore Collection
+            </a>
+          </div>
+          <div
+            class="group relative bg-background-off dark:bg-[#1a2632] p-10 flex flex-col items-start justify-between min-h-[320px] hover:shadow-xl transition-all duration-300"
+          >
+            <div
+              class="absolute top-0 right-0 p-6 opacity-10 group-hover:opacity-20 transition-opacity"
+            >
+              <span class="material-symbols-outlined text-9xl">weekend</span>
+            </div>
+            <div class="relative z-10">
+              <h3
+                class="font-serif text-2xl mb-3 group-hover:text-accent transition-colors"
+              >
+                Arne Jacobsen
+              </h3>
+              <p class="text-text-muted text-sm leading-relaxed mb-6">
+                Jacobsen's design visionary contribution to the Functionalist
+                movement is undeniable. He is best known for his simple yet
+                effective chair designs like the Egg and the Swan.
+              </p>
+            </div>
+            <a
+              class="relative z-10 inline-flex items-center text-sm font-bold uppercase tracking-wide border-b border-transparent group-hover:border-text-main transition-all"
+              href="#"
+            >
+              Explore Collection
+            </a>
+          </div>
+          <div
+            class="group relative bg-background-off dark:bg-[#1a2632] p-10 flex flex-col items-start justify-between min-h-[320px] hover:shadow-xl transition-all duration-300"
+          >
+            <div
+              class="absolute top-0 right-0 p-6 opacity-10 group-hover:opacity-20 transition-opacity"
+            >
+              <span class="material-symbols-outlined text-9xl">table_bar</span>
+            </div>
+            <div class="relative z-10">
+              <h3
+                class="font-serif text-2xl mb-3 group-hover:text-accent transition-colors"
+              >
+                Finn Juhl
+              </h3>
+              <p class="text-text-muted text-sm leading-relaxed mb-6">
+                Juhl introduced Danish Modern to America. He prioritized the
+                user, focusing on how the furniture interacted with the person
+                sitting in it, often creating sculptural forms.
+              </p>
+            </div>
+            <a
+              class="relative z-10 inline-flex items-center text-sm font-bold uppercase tracking-wide border-b border-transparent group-hover:border-text-main transition-all"
+              href="#"
+            >
+              Explore Collection
+            </a>
+          </div>
+        </div>
+        <div class="mt-8 text-center md:hidden">
+          <a
+            class="inline-flex items-center gap-2 text-text-muted hover:text-text-main transition-colors font-medium"
+            href="#"
+          >
+            View all designers
+            <span class="material-symbols-outlined text-sm">arrow_forward</span>
+          </a>
+        </div>
+      </div>
+    </section>
+    <section class="py-24 bg-stone-50 dark:bg-[#0d131a]">
+      <div class="max-w-[1440px] mx-auto px-6 md:px-12">
+        <div class="flex flex-col items-center text-center mb-16">
+          <span
+            class="text-accent uppercase tracking-widest text-sm font-semibold mb-3"
+            >Editorial</span
+          >
+          <h2
+            class="font-serif text-4xl md:text-5xl text-text-main dark:text-white"
+          >
+            The Journal
+          </h2>
+          <p class="text-text-muted mt-4 max-w-lg">
+            Inspiration for the modern home, interviews with makers, and guides
+            to maintaining your collection.
+          </p>
+        </div>
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+          <article class="group cursor-pointer">
+            <div
+              class="overflow-hidden rounded-sm mb-6 aspect-[16/9] lg:aspect-auto lg:h-[400px]"
+            >
+              <img
+                alt="Modern armchair styling"
+                class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBIC4bjVhXGNcbE6HOEDZGb3aeAGvIAWfUd5rl09Ck7gCL353tqBNje0mTFNKhNXL_L4Ku8dtTwltwBTDu8bmeV7qhdFh4qE8PqBvxyLf5VwFI_nS5ApC15D0KZ1H33al71rrXczDxr-rJauS6VbQutn13-0iz4SJyXclSfoLZYTTl0uGmrBIXUpa2Tr2KCAOU5NzZPVsc_n7gke-4BXS5lba_4a8O2tt6JCXnOIW_vWZzJ8PdlmW1eBf-Y56W5a7V2zb12kd8mSuM"
+              />
+            </div>
+            <div class="flex flex-col gap-3">
+              <div
+                class="flex items-center gap-4 text-xs font-semibold uppercase tracking-wider text-text-muted"
+              >
+                <span>Styling</span>
+                <span class="w-1 h-1 rounded-full bg-accent"></span>
+                <span>Oct 12, 2023</span>
+              </div>
+              <h3
+                class="font-serif text-3xl text-text-main dark:text-white group-hover:text-accent transition-colors"
+              >
+                Bringing Mid-Century Modern into the 21st Century
+              </h3>
+              <p class="text-text-muted leading-relaxed line-clamp-3">
+                How to blend vintage teak pieces with contemporary textures and
+                colors to create a space that feels curated, not like a museum.
+                We explore the balance of old and new.
+              </p>
+              <span
+                class="inline-block mt-2 text-sm font-bold underline decoration-accent underline-offset-4 group-hover:text-accent transition-colors"
+                >Read Article</span
+              >
+            </div>
+          </article>
+          <div class="flex flex-col gap-10 justify-center">
+            <article class="flex gap-6 group cursor-pointer items-start">
+              <div
+                class="w-1/3 shrink-0 aspect-square overflow-hidden rounded-sm"
+              >
+                <img
+                  alt="Minimalist coffee table"
+                  class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuC0BhdE4eMeCponDRvKjNsCKLPff5cRTQBHjCM9Eya7qXpkfTURiTE2ItLWVgLzbIN4Vtk7scQ4161XRvI95Kbakrf7tlEE04iiwlfZM4HB024l19loUQaxJhnW099jeIBcshiksLX-9S7FIUh7T32iu69ywmESG-Ofrh4InU22rcsQHNCfO1Dq5riS4iJs3dQ-Cfd4CJIY-cegk1RDyay3CMxQ35hghCOkfygTiBftljoDmmfh2RYV23G0Rpd2I7vAfD9Ps_ROrY0"
+                />
+              </div>
+              <div class="w-2/3 flex flex-col gap-2">
+                <div
+                  class="text-xs font-semibold uppercase tracking-wider text-text-muted mb-1"
+                >
+                  History
+                </div>
+                <h3
+                  class="font-serif text-xl text-text-main dark:text-white group-hover:text-accent transition-colors"
+                >
+                  The Evolution of the Coffee Table
+                </h3>
+                <p class="text-text-muted text-sm line-clamp-2">
+                  From low tea tables to the centerpiece of the modern living
+                  room. A look back at functionality.
+                </p>
+                <span
+                  class="text-sm font-medium mt-1 group-hover:translate-x-1 transition-transform inline-block"
+                  >Read More →</span
+                >
+              </div>
+            </article>
+            <article class="flex gap-6 group cursor-pointer items-start">
+              <div
+                class="w-1/3 shrink-0 aspect-square overflow-hidden rounded-sm"
+              >
+                <img
+                  alt="Lighting design"
+                  class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuDSFQ_Dw0YxKjLklNuNOpDGikZobO4i8p81Pii3TntFEhp-2rs-ZkpX6nXh7olMR4YKEcA_UEulNZ-ep4ZV92l5CtWXnuBJPa8cJ2SdvCGs5kCGu1IqNUnp5A4h2uL_2TV3flhSbMWyjPvn2JUiwJAAZygkNfK-3lD-7IG6fku2D9JVGdtDL_7GPtzViGWRnJcmibt_N_iJlwSzoAVGQSHYsgoH8LvBXS5sfjVTWDW0FTUz-ehnHaib9RvDFm-v0mMUpNJKAfZdpZQ"
+                />
+              </div>
+              <div class="w-2/3 flex flex-col gap-2">
+                <div
+                  class="text-xs font-semibold uppercase tracking-wider text-text-muted mb-1"
+                >
+                  Designers
+                </div>
+                <h3
+                  class="font-serif text-xl text-text-main dark:text-white group-hover:text-accent transition-colors"
+                >
+                  Illuminating Spaces: The PH Lamp Series
+                </h3>
+                <p class="text-text-muted text-sm line-clamp-2">
+                  Poul Henningsen's obsession with light and shadow created one
+                  of the most iconic lighting series in history.
+                </p>
+                <span
+                  class="text-sm font-medium mt-1 group-hover:translate-x-1 transition-transform inline-block"
+                  >Read More →</span
+                >
+              </div>
+            </article>
+            <article class="flex gap-6 group cursor-pointer items-start">
+              <div
+                class="w-1/3 shrink-0 aspect-square bg-gray-200 flex items-center justify-center text-gray-400"
+              >
+                <span class="material-symbols-outlined text-4xl"
+                  >inventory_2</span
+                >
+              </div>
+              <div class="w-2/3 flex flex-col gap-2">
+                <div
+                  class="text-xs font-semibold uppercase tracking-wider text-text-muted mb-1"
+                >
+                  Care Guide
+                </div>
+                <h3
+                  class="font-serif text-xl text-text-main dark:text-white group-hover:text-accent transition-colors"
+                >
+                  Caring for Vintage Leather
+                </h3>
+                <p class="text-text-muted text-sm line-clamp-2">
+                  Essential tips to keep your leather seating supple and
+                  beautiful for decades to come.
+                </p>
+                <span
+                  class="text-sm font-medium mt-1 group-hover:translate-x-1 transition-transform inline-block"
+                  >Read More →</span
+                >
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="py-20 border-t border-gray-100 dark:border-[#2a3642]">
+      <div class="max-w-2xl mx-auto px-6 text-center">
+        <h2 class="font-serif text-3xl mb-4">Join the Inner Circle</h2>
+        <p class="text-text-muted mb-8">
+          Receive early access to new collections, styling tips, and exclusive
+          offers.
+        </p>
+        <form class="flex flex-col sm:flex-row gap-3">
+          <input
+            class="flex-1 bg-background-off dark:bg-[#1a2632] border-none rounded-none px-6 py-4 focus:ring-1 focus:ring-accent outline-none"
+            placeholder="Enter your email address"
+            required=""
+            type="email"
+          />
+          <button
+            class="bg-text-main dark:bg-white text-white dark:text-text-main px-8 py-4 font-medium hover:bg-accent hover:text-white dark:hover:bg-accent dark:hover:text-white transition-colors"
+            type="submit"
+          >
+            Subscribe
+          </button>
+        </form>
+      </div>
+    </section>
+    <footer class="bg-text-main dark:bg-[#0b1116] text-white pt-20 pb-10">
+      <div class="max-w-[1440px] mx-auto px-6 md:px-12">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
+          <div class="col-span-1 md:col-span-1">
+            <div class="flex items-center gap-2 mb-6">
+              <span class="material-symbols-outlined text-2xl">chair</span>
+              <h2 class="text-lg font-serif font-bold">Dane Design</h2>
+            </div>
+            <p class="text-gray-400 text-sm leading-relaxed mb-6">
+              Authentic Scandinavian furniture for the modern connoisseur.
+              Quality, heritage, and design excellence.
+            </p>
+            <div class="flex gap-4">
+              <a
+                class="w-8 h-8 flex items-center justify-center rounded-full bg-white/10 hover:bg-accent transition-colors"
+                href="#"
+                ><span class="text-xs">IG</span></a
+              >
+              <a
+                class="w-8 h-8 flex items-center justify-center rounded-full bg-white/10 hover:bg-accent transition-colors"
+                href="#"
+                ><span class="text-xs">FB</span></a
+              >
+              <a
+                class="w-8 h-8 flex items-center justify-center rounded-full bg-white/10 hover:bg-accent transition-colors"
+                href="#"
+                ><span class="text-xs">PT</span></a
+              >
+            </div>
+          </div>
+          <div>
+            <h4 class="font-serif text-lg mb-6">Shop</h4>
+            <ul class="space-y-4 text-sm text-gray-400">
+              <li>
+                <a class="hover:text-white transition-colors" href="#"
+                  >Seating</a
+                >
+              </li>
+              <li>
+                <a class="hover:text-white transition-colors" href="#"
+                  >Tables</a
+                >
+              </li>
+              <li>
+                <a class="hover:text-white transition-colors" href="#"
+                  >Storage</a
+                >
+              </li>
+              <li>
+                <a class="hover:text-white transition-colors" href="#"
+                  >Lighting</a
+                >
+              </li>
+              <li>
+                <a class="hover:text-white transition-colors" href="#"
+                  >Accessories</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="font-serif text-lg mb-6">Company</h4>
+            <ul class="space-y-4 text-sm text-gray-400">
+              <li>
+                <a class="hover:text-white transition-colors" href="#"
+                  >About Us</a
+                >
+              </li>
+              <li>
+                <a class="hover:text-white transition-colors" href="#"
+                  >Designers</a
+                >
+              </li>
+              <li>
+                <a class="hover:text-white transition-colors" href="#"
+                  >Sustainability</a
+                >
+              </li>
+              <li>
+                <a class="hover:text-white transition-colors" href="#"
+                  >Careers</a
+                >
+              </li>
+              <li>
+                <a class="hover:text-white transition-colors" href="#">Press</a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="font-serif text-lg mb-6">Contact</h4>
+            <ul class="space-y-4 text-sm text-gray-400">
+              <li class="flex items-start gap-3">
+                <span class="material-symbols-outlined text-sm mt-0.5"
+                  >location_on</span
+                >
+                <span>123 Design Avenue,<br />Copenhagen, DK</span>
+              </li>
+              <li class="flex items-center gap-3">
+                <span class="material-symbols-outlined text-sm">call</span>
+                <span>+45 12 34 56 78</span>
+              </li>
+              <li class="flex items-center gap-3">
+                <span class="material-symbols-outlined text-sm">mail</span>
+                <span>hello@danedesign.com</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div
+          class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4"
+        >
+          <p class="text-gray-500 text-xs">
+            © 2024 Dane Design. All rights reserved.
+          </p>
+          <div class="flex gap-6 text-gray-500 text-xs">
+            <a class="hover:text-white transition-colors" href="#"
+              >Privacy Policy</a
+            >
+            <a class="hover:text-white transition-colors" href="#"
+              >Terms of Service</a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

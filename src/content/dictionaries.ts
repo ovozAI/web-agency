@@ -85,6 +85,8 @@ export type Dictionary = {
     quick: string;
     phoneLabel: string;
     telegramLabel: string;
+    starterSummary: string;
+    businessSummary: string;
   };
   footer: {
     tagline: string;
@@ -99,7 +101,7 @@ const dictionaries: Record<Locale, Dictionary> = {
   uz: {
     nav: {
       home: "Bosh sahifa",
-      demos: "Namunalari",
+      demos: "Portfolio",
       pricing: "Narxlar",
       faq: "Savollar",
       contact: "Bog'lanish",
@@ -147,7 +149,7 @@ const dictionaries: Record<Locale, Dictionary> = {
         "Qisqa bozor/raqobatchi tadqiqoti",
         "Domen xaridi va sozlash (narxga kiritilgan)",
         "1 sahifali landing va mobil optimizatsiya",
-        "Hosting bo'yicha yo'l-yo'riq"
+        "Bepul hosting 1 yilga"
       ],
       excludesTitle: "Kirmaydi",
       excludes: [
@@ -166,7 +168,7 @@ const dictionaries: Record<Locale, Dictionary> = {
       ]
     },
     demos: {
-      title: "Tayyor namuna landinglar",
+      title: "Bizning loyihalar",
       subtitle: "Turli sohalar uchun tayyor dizayn namunalari.",
       viewDemo: "Ko'rish",
       viewAll: "Barcha loyihalar",
@@ -226,12 +228,12 @@ const dictionaries: Record<Locale, Dictionary> = {
           a: "Bir sahifali landing, bozor tadqiqoti, domen xaridi va sozlash, mobil optimizatsiya, CTA va aloqa formasi. Bundan tashqari 1 yillik texnik qo'llab-quvvatlash ham kiritilgan."
         },
         {
-          q: "$199 tarifda qancha sahifa bo'ladi?",
-          a: "Business tarifida 5 tagacha sahifa kiritilgan: Bosh sahifa, Biz haqimizda, Xizmatlar, Galereya va Bog'lanish sahifalari. Qo'shimcha sahifalar kelishilgan narxda qo'shiladi."
+          q: "Starter va Business tariflari orasidagi farq nima?",
+          a: "Starter tarifi bitta sahifali landing uchun - asosiy ma'lumotlar va aloqa formasi bilan. Business tarifi esa ko'p sahifali veb-sayt - alohida bo'limlar, kengaytirilgan funksionallik va ko'proq tahrirlashlar bilan."
         },
         {
           q: "Domen narxi qanday bo'ladi?",
-          a: "Domen xaridi barcha tariflarga kiritilgan. .com, .uz yoki boshqa domenlarni biz sotib olib, to'liq sozlab beramiz."
+          a: ".uz domeni narxga kiritilgan. .com, .net va boshqa xalqaro domenlar uchun qo'shimcha to'lov kerak bo'ladi. Domen sotib olish va sozlashni biz o'zimiz amalga oshiramiz."
         },
         {
           q: "Necha kunda tayyor bo'ladi?",
@@ -251,7 +253,7 @@ const dictionaries: Record<Locale, Dictionary> = {
         },
         {
           q: "Hosting ham kiritilganmi?",
-          a: "Hosting alohida. Biz eng yaxshi hosting provayderlarini tavsiya qilamiz va sozlashda yordam beramiz. Oylik xarajat $3-10 atrofida bo'ladi."
+          a: "Ha, oddiy saytlar uchun 1 yillik bepul hosting taqdim etamiz. Murakkab saytlar va Telegram botlar uchun deploy va hosting xizmati uchun qo'shimcha to'lov bo'ladi."
         }
       ]
     },
@@ -267,7 +269,9 @@ const dictionaries: Record<Locale, Dictionary> = {
       error: "Xatolik yuz berdi. Iltimos qayta urinib ko'ring.",
       quick: "Tezkor aloqa",
       phoneLabel: "Telefon raqam",
-      telegramLabel: "Telegram"
+      telegramLabel: "Telegram",
+      starterSummary: "Landing + domen + 1 yillik qo'llab-quvvatlash",
+      businessSummary: "Ko'p sahifali + domen + 1 yillik qo'llab-quvvatlash"
     },
     footer: {
       tagline: "Biznesingizni onlayn olamga olib chiqamiz",
@@ -286,7 +290,7 @@ const dictionaries: Record<Locale, Dictionary> = {
   ru: {
     nav: {
       home: "Главная",
-      demos: "Демо",
+      demos: "Portfolio",
       pricing: "Цены",
       faq: "FAQ",
       contact: "Контакты",
@@ -334,7 +338,7 @@ const dictionaries: Record<Locale, Dictionary> = {
         "Короткое исследование рынка",
         "Покупка и настройка домена (включено в цену)",
         "Одностраничный лендинг + мобильная версия",
-        "Рекомендации по хостингу"
+        "Бесплатный хостинг на 1 год"
       ],
       excludesTitle: "Не входит",
       excludes: [
@@ -353,7 +357,7 @@ const dictionaries: Record<Locale, Dictionary> = {
       ]
     },
     demos: {
-      title: "Готовые демо-лендинги",
+      title: "Portfolio",
       subtitle: "Готовые дизайн-примеры для разных отраслей.",
       viewDemo: "Посмотреть",
       viewAll: "Все проекты",
@@ -413,12 +417,12 @@ const dictionaries: Record<Locale, Dictionary> = {
           a: "Одностраничный лендинг, исследование рынка, покупка и настройка домена, мобильная оптимизация, CTA и форма связи. Также включена техническая поддержка на 1 год."
         },
         {
-          q: "Сколько страниц в тарифе $199?",
-          a: "В тариф Business входит до 5 страниц: Главная, О нас, Услуги, Галерея и Контакты. Дополнительные страницы добавляются по согласованной цене."
+          q: "В чем разница между Starter и Business?",
+          a: "Starter — это одностраничный лендинг с основной информацией и формой связи. Business — многостраничный сайт с отдельными разделами, расширенным функционалом и большим количеством правок."
         },
         {
           q: "Сколько стоит домен?",
-          a: "Покупка домена включена во все тарифы. Мы покупаем и полностью настраиваем домен .com, .uz или другой на ваш выбор."
+          a: "Домен .uz включен в стоимость. Для международных доменов .com, .net и других потребуется доплата. Покупку и настройку домена мы берем на себя."
         },
         {
           q: "Какие сроки?",
@@ -438,7 +442,7 @@ const dictionaries: Record<Locale, Dictionary> = {
         },
         {
           q: "Хостинг тоже включен?",
-          a: "Хостинг оплачивается отдельно. Мы рекомендуем лучших провайдеров и помогаем с настройкой. Ежемесячные расходы около $3-10."
+          a: "Да, для простых сайтов предоставляем бесплатный хостинг на 1 год. Для сложных сайтов и Telegram ботов deploy и хостинг оплачиваются дополнительно."
         }
       ]
     },
@@ -454,7 +458,9 @@ const dictionaries: Record<Locale, Dictionary> = {
       error: "Произошла ошибка. Попробуйте еще раз.",
       quick: "Быстрая связь",
       phoneLabel: "Телефон",
-      telegramLabel: "Telegram"
+      telegramLabel: "Telegram",
+      starterSummary: "Лендинг + домен + 1 год поддержки",
+      businessSummary: "Многостраничный + домен + 1 год поддержки"
     },
     footer: {
       tagline: "Выведем ваш бизнес в онлайн",

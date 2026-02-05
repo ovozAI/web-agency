@@ -255,17 +255,17 @@ export default function LandingPage({ locale }: { locale: Locale }) {
                 <div className="mt-8 space-y-3">
                   <div className="rounded-2xl bg-ink p-5 text-sm text-white/80">
                     <div className="flex items-baseline justify-between">
-                      <span className="text-white font-semibold">Starter</span>
-                      <span className="text-lime font-semibold">$99</span>
+                      <span className="text-white font-semibold">{dict.pricing.starter.name}</span>
+                      <span className="text-lime font-semibold">{dict.pricing.starter.price}</span>
                     </div>
-                    <p className="mt-1 text-white/60">Landing + domain + 1 year support</p>
+                    <p className="mt-1 text-white/60">{dict.contact.starterSummary}</p>
                   </div>
                   <div className="rounded-2xl bg-lime/20 p-5 text-sm">
                     <div className="flex items-baseline justify-between">
-                      <span className="text-ink font-semibold">Business</span>
-                      <span className="text-ink font-semibold">$199</span>
+                      <span className="text-ink font-semibold">{dict.pricing.business.name}</span>
+                      <span className="text-ink font-semibold">{dict.pricing.business.price}</span>
                     </div>
-                    <p className="mt-1 text-ink/60">Multi-page + domain + 1 year support</p>
+                    <p className="mt-1 text-ink/60">{dict.contact.businessSummary}</p>
                   </div>
                 </div>
               </div>
@@ -294,8 +294,13 @@ export default function LandingPage({ locale }: { locale: Locale }) {
           <div className="container py-12">
             <div className="grid gap-8 md:grid-cols-3">
               <div>
-                <h4 className="text-lg font-semibold">Web Agency</h4>
-                <p className="mt-2 text-sm text-white/60">{dict.footer.tagline}</p>
+                <div className="flex items-center gap-3">
+                  <div className="flex h-10 w-10 items-center justify-center rounded-2xl bg-lime text-sm font-bold text-ink">
+                    P24
+                  </div>
+                  <h4 className="text-lg font-semibold">pixel24</h4>
+                </div>
+                <p className="mt-3 text-sm text-white/60">{dict.footer.tagline}</p>
               </div>
               <div>
                 <h4 className="text-sm font-semibold uppercase tracking-widest text-white/40">
@@ -320,7 +325,7 @@ export default function LandingPage({ locale }: { locale: Locale }) {
               </div>
             </div>
             <div className="mt-12 border-t border-white/10 pt-8 text-center text-sm text-white/40">
-              <p>© {new Date().getFullYear()} Web Agency. {dict.footer.rights}</p>
+              <p>© {new Date().getFullYear()} pixel24. {dict.footer.rights}</p>
             </div>
           </div>
         </footer>

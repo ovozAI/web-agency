@@ -27,18 +27,15 @@ export const LANDING_DEMO_COUNT = 6;
 
 export const demos: Demo[] = [
   {
-    slug: "ovozai",
-    title: { uz: "ovozAI", ru: "ovozAI" },
+    slug: "mebel",
+    title: { uz: "Mebel", ru: "Mebel" },
     description: {
-      uz: "AI call-center samaradorligi analitikasi va real-time transkripsiya.",
-      ru: "AI аналитика колл-центра и real-time транскрипция.",
+      uz: "Mebel do'koni uchun veb sahifa",
+      ru: "Веб страница для мебельного магазина.",
     },
-    url: "https://ovozai.uz",
-    preview: "/assets/ovozai.png",
-    badges: [
-      { text: { uz: "AI", ru: "AI" }, color: "lime" },
-      { text: { uz: "SaaS", ru: "SaaS" }, color: "ink" },
-    ],
+    url: "/demos/mebel/index.html",
+    preview: "/demos/mebel/mebel.png",
+    badges: [{ text: { uz: "Web", ru: "Web" }, color: "ocean" }],
   },
   {
     slug: "eclinic",
@@ -61,18 +58,45 @@ export const demos: Demo[] = [
     ],
   },
   {
-    slug: "spendai",
-    title: { uz: "SpendAI", ru: "SpendAI" },
+    slug: "estetic",
+    title: { uz: "Estetic medical", ru: "Estetic medical" },
     description: {
-      uz: "AI-bilan xarajat kuzatish va kategorilash.",
-      ru: "AI-поверх трекинг и категоризация расходов.",
+      uz: "Xususiy klinika uchun veb sahifa",
+      ru: "Веб страница для частной клиники.",
     },
-    url: "https://t.me/spendai_bot",
+    url: "https://estetic.uz",
+    preview: "/assets/estetic.png",
+    badges: [{ text: { uz: "Web", ru: "Web" }, color: "ocean" }],
+  },
+  {
+    slug: "clothing",
+    title: { uz: "Clothing", ru: "Clothing" },
+    description: {
+      uz: "Kiyim do'koni uchun veb sahifa",
+      ru: "Веб страница для магазина одежды.",
+    },
+    url: "/demos/clothing/index.html",
+    preview: "/demos/clothing/clothing.png",
     badges: [
-      { text: { uz: "Telegram Bot", ru: "Telegram Bot" }, color: "ocean" },
-      { text: { uz: "AI", ru: "AI" }, color: "lime" },
+      { text: { uz: "Web", ru: "Web" }, color: "ocean" },
+      { text: { uz: "E-commerce", ru: "E-commerce" }, color: "coral" },
     ],
   },
+  {
+    slug: "ovozai",
+    title: { uz: "ovozAI", ru: "ovozAI" },
+    description: {
+      uz: "AI call-center samaradorligi analitikasi va real-time transkripsiya.",
+      ru: "AI аналитика колл-центра и real-time транскрипция.",
+    },
+    url: "https://ovozai.uz",
+    preview: "/assets/ovozai.png",
+    badges: [
+      { text: { uz: "AI", ru: "AI" }, color: "lime" },
+      { text: { uz: "SaaS", ru: "SaaS" }, color: "ink" },
+    ],
+  },
+
   {
     slug: "market",
     title: { uz: "Market", ru: "Market" },
@@ -85,6 +109,20 @@ export const demos: Demo[] = [
     badges: [{ text: { uz: "Web", ru: "Web" }, color: "ocean" }],
   },
   {
+    slug: "spendai",
+    title: { uz: "SpendAI", ru: "SpendAI" },
+    description: {
+      uz: "AI-bilan xarajat kuzatish va kategorilash.",
+      ru: "AI-поверх трекинг и категоризация расходов.",
+    },
+    url: "https://t.me/spendai_bot",
+    preview: "/assets/spendai.jpg",
+    badges: [
+      { text: { uz: "Telegram Bot", ru: "Telegram Bot" }, color: "ocean" },
+      { text: { uz: "AI", ru: "AI" }, color: "lime" },
+    ],
+  },
+  {
     slug: "ovozai-bot",
     title: { uz: "ovozAI Bot", ru: "ovozAI Bot" },
     description: {
@@ -92,21 +130,11 @@ export const demos: Demo[] = [
       ru: "Многоязыковая транскрипция голосовых сообщений в Telegram.",
     },
     url: "https://t.me/ovoz_aibot",
+    preview: "/assets/ovozai-bot.jpg",
     badges: [
       { text: { uz: "Telegram Bot", ru: "Telegram Bot" }, color: "ocean" },
       { text: { uz: "AI", ru: "AI" }, color: "lime" },
     ],
-  },
-  {
-    slug: "estetic",
-    title: { uz: "Estetic medical", ru: "Estetic medical" },
-    description: {
-      uz: "Xususiy klinika uchun veb sahifa",
-      ru: "Веб страница для частной клиники.",
-    },
-    url: "https://estetic.uz",
-    preview: "/assets/estetic.png",
-    badges: [{ text: { uz: "Web", ru: "Web" }, color: "ocean" }],
   },
 
   {
@@ -120,27 +148,5 @@ export const demos: Demo[] = [
     badges: [
       { text: { uz: "Telegram Bot", ru: "Telegram Bot" }, color: "ocean" },
     ],
-  },
-  {
-    slug: "cafe",
-    title: { uz: "Qahvaxona landing", ru: "Лендинг кофейни" },
-    description: {
-      uz: "Minimalistik menyu va tezkor buyurtma CTA bilan landing.",
-      ru: "Лендинг с минимальным меню и быстрым CTA заказа.",
-    },
-    preview: "/demos/cafe/preview.svg",
-    url: "/demos/cafe/index.html",
-    badges: [{ text: { uz: "Landing", ru: "Лендинг" }, color: "lime" }],
-  },
-  {
-    slug: "repair",
-    title: { uz: "Avtoservis landing", ru: "Лендинг автосервиса" },
-    description: {
-      uz: "Xizmatlar, narxlar va bron formi bilan landing.",
-      ru: "Лендинг с услугами, ценами и формой записи.",
-    },
-    preview: "/demos/repair/preview.svg",
-    url: "/demos/repair/index.html",
-    badges: [{ text: { uz: "Landing", ru: "Лендинг" }, color: "lime" }],
   },
 ];

@@ -1,0 +1,524 @@
+<!doctype html>
+<html class="light" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>ETHOS — Men's Ethical Fashion</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&amp;family=Manrope:wght@200..800&amp;display=swap"
+      rel="stylesheet"
+    />
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#bca37d", // Muted bronze/gold for a more masculine high-end feel
+              "background-light": "#F5F2ED",
+              "background-dark": "#1a1a17",
+              "sand-dark": "#E8E3D9",
+            },
+            fontFamily: {
+              display: ["Manrope", "sans-serif"],
+              serif: ["Playfair Display", "serif"],
+            },
+            borderRadius: {
+              DEFAULT: "0.125rem",
+              lg: "0.25rem",
+              xl: "0.5rem",
+              full: "9999px",
+            },
+          },
+        },
+      };
+    </script>
+    <style type="text/tailwindcss">
+      .serif-text {
+        font-family: "Playfair Display", serif;
+      }
+      .hide-scrollbar::-webkit-scrollbar {
+        display: none;
+      }
+      .hide-scrollbar {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+      }
+    </style>
+  </head>
+  <body
+    class="bg-background-light dark:bg-background-dark font-display text-[#1a1a17] dark:text-stone-200 transition-colors duration-300"
+  >
+    <div
+      class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden"
+    >
+      <header
+        class="fixed top-0 z-50 w-full bg-background-light/90 dark:bg-background-dark/90 backdrop-blur-md border-b border-[#1a1a17]/5 px-6 lg:px-20 py-5 flex items-center justify-between"
+      >
+        <div class="flex items-center gap-2">
+          <h2 class="serif-text text-2xl font-bold tracking-tighter">ETHOS</h2>
+        </div>
+        <nav class="hidden md:flex items-center gap-10">
+          <a
+            class="text-xs font-semibold hover:text-primary transition-colors uppercase tracking-[0.2em]"
+            href="#"
+            >Menswear</a
+          >
+          <a
+            class="text-xs font-semibold hover:text-primary transition-colors uppercase tracking-[0.2em]"
+            href="#"
+            >Sourcing</a
+          >
+          <a
+            class="text-xs font-semibold hover:text-primary transition-colors uppercase tracking-[0.2em]"
+            href="#"
+            >Workshops</a
+          >
+          <a
+            class="text-xs font-semibold hover:text-primary transition-colors uppercase tracking-[0.2em]"
+            href="#"
+            >Archive</a
+          >
+        </nav>
+        <div class="flex items-center gap-6">
+          <button class="material-symbols-outlined text-2xl">search</button>
+          <button
+            class="bg-[#1a1a17] dark:bg-stone-200 text-white dark:text-[#1a1a17] px-6 py-2.5 rounded-none font-bold text-[10px] uppercase tracking-[0.2em] hover:bg-primary hover:text-white transition-all"
+          >
+            Shop Collection
+          </button>
+        </div>
+      </header>
+      <main class="pt-24 lg:pt-32">
+        <section class="px-6 lg:px-20 py-12 lg:py-24">
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
+            <div class="lg:col-span-7 order-2 lg:order-1">
+              <div
+                class="aspect-[4/5] w-full bg-cover bg-center shadow-2xl grayscale-[0.2] hover:grayscale-0 transition-all duration-1000"
+                data-alt="Sophisticated male model in ethical linen tailoring"
+                style="
+                  background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuAV6AN7Iy5ycl-ymLBLCJBeVXR1_O2JoE6HYSzCcbJkZtWlECbMkWLar0AiQm25Rxhf7bPHpi0Dlw3uGko_m1Tx1myGwYLykg98opfMIzTA8DBciomXG1JDNikcRS7Khxi3K7VQ3_wlKZP9ilGWvGZvi4ielX7Nmljdtokpb2v370E0NUTCyrRvmGdrFNlWOs6HfMd9J_fHAqXlkKZyjQ7QI10mSYvz88KcZphp75umyY-cwd1Qe4Y0K_Z9l7wC_9pUqjU5mOxJOAcC&quot;);
+                "
+              ></div>
+            </div>
+            <div
+              class="lg:col-span-5 order-1 lg:order-2 flex flex-col gap-10 lg:pl-12"
+            >
+              <span
+                class="text-[10px] uppercase tracking-[0.4em] text-[#1a1a17]/50 dark:text-stone-400"
+                >The Modern Gentleman — Vol. IV</span
+              >
+              <h1
+                class="serif-text text-5xl lg:text-8xl leading-[1] font-light"
+              >
+                Refined by <br />
+                <span class="italic font-normal">Integrity</span>
+              </h1>
+              <p
+                class="text-lg leading-relaxed text-[#1a1a17]/70 dark:text-stone-400 max-w-sm"
+              >
+                An exploration of masculinity through slow craftsmanship. We
+                create permanent wardrobe staples for the discerning man,
+                balancing architectural structure with environmental softness.
+              </p>
+              <div class="flex flex-col sm:flex-row gap-6">
+                <button
+                  class="bg-[#1a1a17] text-white h-14 px-12 font-bold uppercase text-xs tracking-[0.2em] hover:bg-primary transition-colors"
+                >
+                  Explore Menswear
+                </button>
+                <button
+                  class="border border-[#1a1a17]/20 dark:border-stone-700 h-14 px-12 font-bold uppercase text-xs tracking-[0.2em] hover:bg-[#1a1a17] hover:text-white dark:hover:bg-stone-200 dark:hover:text-[#1a1a17] transition-all"
+                >
+                  Our Origins
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="py-24 bg-sand-dark/30 dark:bg-white/[0.02]">
+          <div class="px-6 lg:px-20 mb-16 flex items-end justify-between">
+            <div>
+              <h2 class="serif-text text-4xl mb-4 italic">Seasonal Staples</h2>
+              <p class="text-xs uppercase tracking-[0.3em] opacity-50">
+                Precision tailoring. Ethical sourcing.
+              </p>
+            </div>
+            <div class="flex gap-4">
+              <button
+                class="w-12 h-12 border border-[#1a1a17]/10 flex items-center justify-center hover:bg-[#1a1a17] hover:text-white transition-colors"
+              >
+                <span class="material-symbols-outlined font-light">west</span>
+              </button>
+              <button
+                class="w-12 h-12 border border-[#1a1a17]/10 flex items-center justify-center hover:bg-[#1a1a17] hover:text-white transition-colors"
+              >
+                <span class="material-symbols-outlined font-light">east</span>
+              </button>
+            </div>
+          </div>
+          <div class="flex overflow-x-auto hide-scrollbar gap-10 px-6 lg:px-20">
+            <div class="min-w-[320px] lg:min-w-[420px] group cursor-pointer">
+              <div class="aspect-[3/4] overflow-hidden bg-white mb-8">
+                <div
+                  class="w-full h-full bg-cover bg-center transition-transform duration-1000 group-hover:scale-105"
+                  data-alt="Tailored wool overcoat in camel"
+                  style="
+                    background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuDlntXnK9zxRgai9N6SVei95Fi5QJ2h7KA9H8B0mkkUnTa8-ZAlTvWBqBosI1rWm1b2GMS-YieExmF4DMrn-UdIc0qY7kqZ_Glg_zirr3RL8ITj87CKamsNyjlcKZWVW0iCjTFPkJylnTaJ1Fu4irKqLC97BlFv-yLpnQkDQwm9_wQsyZfrpncMcyCfZXtEsH16J-iCGodjkq5ArTcsVAEB-fa9tE92fY9GUB8-flBncz0Nqg5lPv8zAJ6pa2iCR-lC2NtEb_QGJL0t&quot;);
+                  "
+                ></div>
+              </div>
+              <div class="flex justify-between items-baseline">
+                <div>
+                  <h3 class="text-sm font-bold uppercase tracking-widest mb-1">
+                    The Tailored Overcoat
+                  </h3>
+                  <p class="text-xs opacity-50 italic">
+                    Recycled Double-Faced Wool
+                  </p>
+                </div>
+                <p class="text-lg serif-text">$850</p>
+              </div>
+            </div>
+            <div class="min-w-[320px] lg:min-w-[420px] group cursor-pointer">
+              <div class="aspect-[3/4] overflow-hidden bg-white mb-8">
+                <div
+                  class="w-full h-full bg-cover bg-center transition-transform duration-1000 group-hover:scale-105"
+                  data-alt="Textured knit sweater in cream"
+                  style="
+                    background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuAyPDgIO8URm8BoJrRT7M-Je6PPv465oxFafCg1HNb2oArV84Ra2rZNxyJ_LBBjLhtUUPuIifJ-tbsySMaInIl-ttDl7oDHa_ziYZlBf-A4Kj_fIJb9NG0AmPzjS39r2tILPcJCoBR-UoaQeR0D-VztzIjbhIRG1ErZVcFLNDoMkug2XvGaL3_dhmZ10_vGyV39Ig4xF7jQBvUjjj4dVWBUb-dCuHj0GsxRv_byz0aguCirq5eOw2r62wOTXIfiaBSsVFY3evCSgQWr&quot;);
+                  "
+                ></div>
+              </div>
+              <div class="flex justify-between items-baseline">
+                <div>
+                  <h3 class="text-sm font-bold uppercase tracking-widest mb-1">
+                    Textured Merino Knit
+                  </h3>
+                  <p class="text-xs opacity-50 italic">
+                    Responsibly Sourced Extra-Fine Merino
+                  </p>
+                </div>
+                <p class="text-lg serif-text">$320</p>
+              </div>
+            </div>
+            <div class="min-w-[320px] lg:min-w-[420px] group cursor-pointer">
+              <div class="aspect-[3/4] overflow-hidden bg-white mb-8">
+                <div
+                  class="w-full h-full bg-cover bg-center transition-transform duration-1000 group-hover:scale-105"
+                  data-alt="High-waist structured trousers in charcoal"
+                  style="
+                    background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuAiQ-Vcs_cOqecyX2_zNQzW4pmKaQuO9QlwrY2gmU9nn3ve6iAUFRDySid2uAIMsypytDw-PmHw_yeA92aYFiaj6VdpfGqQ6j3E0I2LMuZY3b9eFhLZdVVPwcwsOKLH85rD39XAih7EU24rCV0RgoDQpJ-I0FAMYcPmUHW1o660llVGutSCRwwYBmwBz4riQeHDyaUyZLRbViROlnJFBCmIJuvzKZktVZ6ZwS_rZmpD6UU8GLvaEWbSEqRAThlsbjqmxlGqFMxMDUi6&quot;);
+                  "
+                ></div>
+              </div>
+              <div class="flex justify-between items-baseline">
+                <div>
+                  <h3 class="text-sm font-bold uppercase tracking-widest mb-1">
+                    Pleated Trousers
+                  </h3>
+                  <p class="text-xs opacity-50 italic">
+                    Organic Hemp &amp; Cotton Blend
+                  </p>
+                </div>
+                <p class="text-lg serif-text">$245</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="px-6 lg:px-40 py-32 lg:py-48">
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-24 items-center">
+            <div class="flex flex-col gap-10">
+              <h2 class="serif-text text-5xl lg:text-6xl italic leading-tight">
+                Quiet Luxury, <br />
+                Loud Responsibility
+              </h2>
+              <p
+                class="text-lg leading-relaxed text-[#1a1a17]/70 dark:text-stone-400"
+              >
+                Our commitment goes beyond aesthetic. We utilize regenerative
+                agriculture and low-impact circularity to ensure that the
+                garments you wear today contribute to a healthier tomorrow. No
+                compromises, no shortcuts.
+              </p>
+              <div
+                class="grid grid-cols-1 sm:grid-cols-2 gap-10 mt-6 border-t border-[#1a1a17]/10 pt-10"
+              >
+                <div class="flex flex-col gap-4">
+                  <span class="material-symbols-outlined text-primary text-3xl"
+                    >landscape</span
+                  >
+                  <h4 class="font-bold text-xs uppercase tracking-[0.2em]">
+                    Regenerative Cotton
+                  </h4>
+                  <p class="text-xs opacity-60 leading-relaxed">
+                    Farming that restores soil health and sequesters carbon.
+                  </p>
+                </div>
+                <div class="flex flex-col gap-4">
+                  <span class="material-symbols-outlined text-primary text-3xl"
+                    >precision_manufacturing</span
+                  >
+                  <h4 class="font-bold text-xs uppercase tracking-[0.2em]">
+                    Zero-Waste Cutting
+                  </h4>
+                  <p class="text-xs opacity-60 leading-relaxed">
+                    Advanced pattern making to eliminate fabric scrap at the
+                    source.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="relative">
+              <div
+                class="aspect-[4/5] bg-cover bg-center shadow-2xl"
+                data-alt="Close up of high-quality suit fabric texture"
+                style="
+                  background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuAo86jNq8ZIciuyQwgjuuVZXpfc3UgVswk2vpOkMUUMH6ccg7cq8qcKU-h5y5lOceQ3FaN50RxiyMN9aXEybCVSDRXPLLMMqOuHXUbfLJQ97k6jtcVgz7unWXvVg25uxUacIk1Y1dgjYFU0xdG4XrbmQtCphY1btEtqq6UxBXUd6Rbz1YGJnrbCGl7Zq1zFJUNTjosg8tPleJTftnwn8nOhDdpkMA2anoIpLkhcvtordIdFmfwzEZhSxtxSOTJ9c-xNjMBJ_4ZYxIC-&quot;);
+                "
+              ></div>
+              <div
+                class="absolute -bottom-8 -left-8 w-72 bg-[#1a1a17] text-white p-10 shadow-2xl"
+              >
+                <p class="font-serif italic text-xl leading-snug">
+                  "True elegance is the absence of harm."
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section
+          class="px-6 lg:px-40 py-24 lg:py-40 bg-sand-dark/20 dark:bg-white/[0.03]"
+        >
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-24 items-center">
+            <div class="order-2 lg:order-1 relative">
+              <div
+                class="aspect-[4/3] bg-cover bg-center shadow-2xl grayscale"
+                data-alt="Menswear tailoring workshop"
+                style="
+                  background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuA1s71Bc3WufxvmQ0ZNOZqTGDjMlVOA3s9510f_VC86KmEnKRk_nMI_mdgH15WNFPKOM90qdAagLEUkrBS3bnJSJz-V5AgRv8kF-tkPu1511z0p3N3XNrXT1MeVhHC5oRw-5zongJy23B8A4GUWva-mJhoDaorM75SU_LUVOMHiKBNPgoxwv1MaT3Lz7tGJN2BTECbwkXrjg7vKLL1KlCepyA5mbluHugl8sFRC4soVJELEkG9TbDiUGd9LpSJRB4SJJ2b3gJCizuDC&quot;);
+                "
+              ></div>
+            </div>
+            <div class="order-1 lg:order-2 flex flex-col gap-10">
+              <h2 class="serif-text text-5xl lg:text-6xl italic leading-tight">
+                The Ledger of <br />
+                Craft
+              </h2>
+              <p
+                class="text-lg leading-relaxed text-[#1a1a17]/70 dark:text-stone-400"
+              >
+                We reveal the journey of every thread. From the cost of Italian
+                recycled wool to the wages paid in our family-run workshop in
+                Portugal. Our profit margins are transparent, our motives even
+                more so.
+              </p>
+              <div class="space-y-8">
+                <div
+                  class="flex items-center gap-6 border-b border-[#1a1a17]/10 dark:border-stone-800 pb-6 group cursor-default"
+                >
+                  <span
+                    class="text-3xl serif-text italic text-primary opacity-50 group-hover:opacity-100 transition-opacity"
+                    >01</span
+                  >
+                  <span class="text-xs uppercase tracking-[0.3em] font-bold"
+                    >Traceable Supply Chains</span
+                  >
+                </div>
+                <div
+                  class="flex items-center gap-6 border-b border-[#1a1a17]/10 dark:border-stone-800 pb-6 group cursor-default"
+                >
+                  <span
+                    class="text-3xl serif-text italic text-primary opacity-50 group-hover:opacity-100 transition-opacity"
+                    >02</span
+                  >
+                  <span class="text-xs uppercase tracking-[0.3em] font-bold"
+                    >Ethical Labor Standards</span
+                  >
+                </div>
+                <div
+                  class="flex items-center gap-6 border-b border-[#1a1a17]/10 dark:border-stone-800 pb-6 group cursor-default"
+                >
+                  <span
+                    class="text-3xl serif-text italic text-primary opacity-50 group-hover:opacity-100 transition-opacity"
+                    >03</span
+                  >
+                  <span class="text-xs uppercase tracking-[0.3em] font-bold"
+                    >Climate Neutral Shipping</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="px-6 lg:px-20 py-40 text-center">
+          <div class="max-w-3xl mx-auto flex flex-col items-center gap-12">
+            <h2 class="serif-text text-5xl italic">Ethos Collective</h2>
+            <p class="text-lg text-[#1a1a17]/60 dark:text-stone-400">
+              Receive early access to limited edition archival drops and our
+              quarterly transparency report.
+            </p>
+            <form class="w-full flex flex-col sm:flex-row gap-6">
+              <input
+                class="flex-1 bg-transparent border-b border-[#1a1a17]/20 dark:border-stone-700 px-0 py-4 focus:outline-none focus:border-primary transition-colors text-lg"
+                placeholder="Your Email Address"
+                type="email"
+              />
+              <button
+                class="bg-[#1a1a17] dark:bg-stone-200 text-white dark:text-[#1a1a17] px-14 py-4 font-bold uppercase text-xs tracking-[0.2em] hover:bg-primary hover:text-white transition-all"
+                type="submit"
+              >
+                Join
+              </button>
+            </form>
+            <p class="text-[10px] uppercase tracking-[0.3em] opacity-30">
+              Respect for your privacy is ingrained in our ethos.
+            </p>
+          </div>
+        </section>
+      </main>
+      <footer
+        class="bg-white dark:bg-[#151512] px-6 lg:px-20 py-24 border-t border-[#1a1a17]/5"
+      >
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-16">
+          <div class="flex flex-col gap-8">
+            <h2 class="serif-text text-3xl font-bold italic tracking-tighter">
+              ETHOS
+            </h2>
+            <p
+              class="text-xs leading-relaxed opacity-50 uppercase tracking-widest"
+            >
+              The intersection of high-end design and environmental restoration
+              for the modern man.
+            </p>
+            <div class="flex gap-6">
+              <a class="hover:text-primary transition-colors" href="#"
+                ><span class="material-symbols-outlined text-xl">share</span></a
+              >
+              <a class="hover:text-primary transition-colors" href="#"
+                ><span class="material-symbols-outlined text-xl"
+                  >language</span
+                ></a
+              >
+            </div>
+          </div>
+          <div>
+            <h4 class="font-bold text-[10px] uppercase tracking-[0.3em] mb-10">
+              Collections
+            </h4>
+            <ul
+              class="space-y-4 text-xs font-medium uppercase tracking-widest opacity-60"
+            >
+              <li>
+                <a class="hover:text-primary transition-colors" href="#"
+                  >Outerwear</a
+                >
+              </li>
+              <li>
+                <a class="hover:text-primary transition-colors" href="#"
+                  >Knitwear</a
+                >
+              </li>
+              <li>
+                <a class="hover:text-primary transition-colors" href="#"
+                  >Tailoring</a
+                >
+              </li>
+              <li>
+                <a class="hover:text-primary transition-colors" href="#"
+                  >Essentials</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="font-bold text-[10px] uppercase tracking-[0.3em] mb-10">
+              Discovery
+            </h4>
+            <ul
+              class="space-y-4 text-xs font-medium uppercase tracking-widest opacity-60"
+            >
+              <li>
+                <a class="hover:text-primary transition-colors" href="#"
+                  >Impact Report</a
+                >
+              </li>
+              <li>
+                <a class="hover:text-primary transition-colors" href="#"
+                  >The Workshop</a
+                >
+              </li>
+              <li>
+                <a class="hover:text-primary transition-colors" href="#"
+                  >Materiality</a
+                >
+              </li>
+              <li>
+                <a class="hover:text-primary transition-colors" href="#"
+                  >Journal</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="font-bold text-[10px] uppercase tracking-[0.3em] mb-10">
+              Assistance
+            </h4>
+            <ul
+              class="space-y-4 text-xs font-medium uppercase tracking-widest opacity-60"
+            >
+              <li>
+                <a class="hover:text-primary transition-colors" href="#"
+                  >Size Guide</a
+                >
+              </li>
+              <li>
+                <a class="hover:text-primary transition-colors" href="#"
+                  >Shipping</a
+                >
+              </li>
+              <li>
+                <a class="hover:text-primary transition-colors" href="#"
+                  >Returns</a
+                >
+              </li>
+              <li>
+                <a class="hover:text-primary transition-colors" href="#"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div
+          class="mt-24 pt-10 border-t border-[#1a1a17]/5 flex flex-col md:flex-row justify-between items-center gap-6"
+        >
+          <p class="text-[10px] uppercase tracking-widest opacity-30">
+            © 2024 ETHOS MENSWEAR. ESTABLISHED IN LONDON.
+          </p>
+          <div
+            class="flex gap-10 text-[10px] uppercase tracking-widest opacity-30"
+          >
+            <a class="hover:opacity-100 transition-opacity" href="#">Privacy</a>
+            <a class="hover:opacity-100 transition-opacity" href="#">Terms</a>
+            <a class="hover:opacity-100 transition-opacity" href="#">Cookies</a>
+          </div>
+        </div>
+      </footer>
+      <div class="fixed bottom-10 right-10 z-40">
+        <button
+          class="bg-[#1a1a17] text-white w-16 h-16 shadow-2xl flex items-center justify-center hover:bg-primary transition-all duration-300"
+        >
+          <span class="material-symbols-outlined font-light text-2xl"
+            >shopping_bag</span
+          >
+        </button>
+      </div>
+    </div>
+  </body>
+</html>
