@@ -72,7 +72,7 @@ export default function LandingPage({ locale }: { locale: Locale }) {
                   </div>
                   <div className="grid gap-4">
                     {dict.steps.items.map((item) => (
-                      <div key={item.title} className="rounded-2xl bg-white px-5 py-4">
+                      <div key={item.title} className="rounded-2xl bg-white px-5 py-4 border border-ink/5">
                         <p className="text-sm font-semibold text-ink">{item.title}</p>
                         <p className="text-sm text-ink/70">{item.body}</p>
                       </div>
