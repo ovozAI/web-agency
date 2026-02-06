@@ -13,7 +13,10 @@ export async function POST(request: Request) {
   const body = (await request.json()) as Payload;
 
   if (!body.name || !body.phone || !body.message) {
-    return NextResponse.json({ ok: false, error: "Missing fields" }, { status: 400 });
+    return NextResponse.json(
+      { ok: false, error: "Missing fields" },
+      { status: 400 },
+    );
   }
 
   const token = process.env.TELEGRAM_BOT_TOKEN;
@@ -22,29 +25,36 @@ export async function POST(request: Request) {
   if (!token || !chatId) {
     return NextResponse.json(
       { ok: false, error: "Missing Telegram env" },
-      { status: 500 }
+      { status: 500 },
     );
   }
 
   const text = [
-    "New lead",
+    "🟢 New lead",
     `Name: ${body.name}`,
     `Phone: ${body.phone}`,
     `Locale: ${body.locale ?? ""}`,
     `Page: ${body.page ?? ""}`,
-    `Message: ${body.message}`
+    `Message: ${body.message}`,
+    `@yakyo @alitoshmatov`,
   ]
     .filter(Boolean)
     .join("\n");
 
-  const response = await fetch(`https://api.telegram.org/bot${token}/sendMessage`, {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({ chat_id: chatId, text })
-  });
+  const response = await fetch(
+    `https://api.telegram.org/bot${token}/sendMessage`,
+    {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ chat_id: chatId, text }),
+    },
+  );
 
   if (!response.ok) {
-    return NextResponse.json({ ok: false, error: "Telegram error" }, { status: 502 });
+    return NextResponse.json(
+      { ok: false, error: "Telegram error" },
+      { status: 502 },
+    );
   }
 
   return NextResponse.json({ ok: true });
