@@ -37,8 +37,79 @@ export default function LandingPage({ locale }: { locale: Locale }) {
   const dict = getDictionary(locale);
   const basePath = locale === "ru" ? "/ru" : "";
 
+  const organizationSchema = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    name: "pixel24",
+    url: "https://pixel24.uz",
+    logo: "https://pixel24.uz/icon.svg",
+    contactPoint: {
+      "@type": "ContactPoint",
+      telephone: siteConfig.phone,
+      contactType: "sales",
+      availableLanguage: ["Uzbek", "Russian"],
+    },
+    sameAs: [siteConfig.telegramUrl],
+  };
+
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: dict.faq.items.map((item) => ({
+      "@type": "Question",
+      name: item.q,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: item.a,
+      },
+    })),
+  };
+
+  const serviceSchema = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    provider: {
+      "@type": "Organization",
+      name: "pixel24",
+    },
+    serviceType: "Web Development",
+    areaServed: "UZ",
+    hasOfferCatalog: {
+      "@type": "OfferCatalog",
+      name: locale === "ru" ? "Тарифы" : "Tariflar",
+      itemListElement: [
+        {
+          "@type": "Offer",
+          name: dict.pricing.starter.name,
+          price: "99",
+          priceCurrency: "USD",
+          description: dict.pricing.starter.description,
+        },
+        {
+          "@type": "Offer",
+          name: dict.pricing.business.name,
+          price: "199",
+          priceCurrency: "USD",
+          description: dict.pricing.business.description,
+        },
+      ],
+    },
+  };
+
   return (
     <div className="min-h-screen bg-hero-radial">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
+      />
       <div className="grid-sheen">
         <SiteHeader locale={locale} dict={dict} basePath={basePath} />
         <main className="space-y-24 pb-20">
