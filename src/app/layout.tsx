@@ -43,12 +43,21 @@ export const metadata: Metadata = {
     description:
       "Kichik va o'rta bizneslar uchun zamonaviy saytlar, telegram botlar va veb-ilovalar. Landing sahifalar $99 dan.",
     url: siteConfig.baseUrl,
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "pixel24 — Professional Web Solutions",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "pixel24 — Biznesingiz uchun professional veb-sayt",
     description:
       "Kichik va o'rta bizneslar uchun zamonaviy saytlar, telegram botlar va veb-ilovalar.",
+    images: ["/og-image.png"],
   },
   alternates: {
     canonical: siteConfig.baseUrl,
