@@ -59,6 +59,17 @@ export const demos: Demo[] = [
     ],
   },
   {
+    slug: "dr-urolog",
+    title: { uz: "Dr. Azizbek", ru: "Dr. Azizbek" },
+    description: {
+      uz: "Urolog-androlog shifokor uchun veb-sayt",
+      ru: "Веб страница для врача уролога-андролога.",
+    },
+    url: "https://dr-urolog.uz",
+    preview: "/assets/dr-urolog.png",
+    badges: [{ text: { uz: "Web", ru: "Web" }, color: "ocean" }],
+  },
+  {
     slug: "trucking",
     title: { uz: "Atlas logistics", ru: "Atlas logistics" },
     description: {
