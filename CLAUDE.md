@@ -15,7 +15,7 @@ npm run build        # Static export to out/ (output: "export")
 npm lint             # Run ESLint
 ```
 
-The site is a fully static export: no API routes, server actions or runtime env vars. It is deployed on Coolify as a static site (Nixpacks, "Is it a static site?" on, publish directory `/out`) and served by nginx.
+The site is a fully static export: no API routes, server actions or runtime env vars. It is deployed on Coolify with the Dockerfile build strategy: the `Dockerfile` builds `out/` and serves it with nginx (`nginx.conf`) on port 80.
 
 ## Architecture & Key Concepts
 
