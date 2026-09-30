@@ -76,12 +76,8 @@ export type Dictionary = {
     title: string;
     subtitle: string;
     formTitle: string;
-    name: string;
-    phone: string;
-    message: string;
-    submit: string;
-    success: string;
-    error: string;
+    telegramCta: string;
+    callCta: string;
     quick: string;
     phoneLabel: string;
     telegramLabel: string;
@@ -273,14 +269,10 @@ const dictionaries: Record<Locale, Dictionary> = {
     },
     contact: {
       title: "Bog'lanish",
-      subtitle: "Qisqa ma'lumot qoldiring, 1 ish kuni ichida javob beramiz.",
+      subtitle: "Telegramga yozing yoki qo'ng'iroq qiling — 1 ish kuni ichida javob beramiz.",
       formTitle: "Loyiha haqida yozing",
-      name: "Ism",
-      phone: "Telefon",
-      message: "Xabar",
-      submit: "Yuborish",
-      success: "Xabar yuborildi. Tez orada aloqaga chiqamiz!",
-      error: "Xatolik yuz berdi. Iltimos qayta urinib ko'ring.",
+      telegramCta: "Telegramda yozish",
+      callCta: "Qo'ng'iroq qilish",
       quick: "Tezkor aloqa",
       phoneLabel: "Telefon raqam",
       telegramLabel: "Telegram",
@@ -467,14 +459,10 @@ const dictionaries: Record<Locale, Dictionary> = {
     },
     contact: {
       title: "Связаться",
-      subtitle: "Оставьте заявку — ответим в течение 1 рабочего дня.",
+      subtitle: "Напишите в Telegram или позвоните — ответим в течение 1 рабочего дня.",
       formTitle: "Расскажите о проекте",
-      name: "Имя",
-      phone: "Телефон",
-      message: "Сообщение",
-      submit: "Отправить",
-      success: "Сообщение отправлено. Скоро свяжемся!",
-      error: "Произошла ошибка. Попробуйте еще раз.",
+      telegramCta: "Написать в Telegram",
+      callCta: "Позвонить",
       quick: "Быстрая связь",
       phoneLabel: "Телефон",
       telegramLabel: "Telegram",

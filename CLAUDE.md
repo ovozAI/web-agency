@@ -11,10 +11,11 @@ This is a bilingual (Uzbek/Russian) web agency landing page built with Next.js 1
 ```bash
 npm install          # Install dependencies
 npm run dev          # Start development server (localhost:3000)
-npm run build        # Production build
-npm run start        # Start production server
+npm run build        # Static export to out/ (output: "export")
 npm lint             # Run ESLint
 ```
+
+The site is a fully static export: no API routes, server actions or runtime env vars. It is deployed on Coolify as a static site (Nixpacks, "Is it a static site?" on, publish directory `/out`) and served by nginx.
 
 ## Architecture & Key Concepts
 
@@ -63,7 +64,7 @@ Badge colors: `lime`, `ocean`, `coral`, `ink`
 
 - **Page components** (`LandingPage`, `DemosListPage`, `DemoDetailPage`): Receive `locale` and fetch dictionary
 - **Shared components** (`SiteHeader`, `DemoCard`, `FaqAccordion`): Receive dictionary as prop
-- **Client components**: `ContactForm`, `LanguageSwitcher`, `FaqAccordion` (marked with `"use client"`)
+- **Client components**: `LanguageSwitcher`, `FaqAccordion` (marked with `"use client"`)
 
 ### Pricing Tiers
 
@@ -74,14 +75,9 @@ Three tiers defined in dictionaries:
 
 Domain purchase is included in all tiers.
 
-### Contact Form Integration
+### Contact
 
-The contact form submits to `/api/contact` which forwards to Telegram. Requires environment variables:
-
-```bash
-TELEGRAM_BOT_TOKEN=your_bot_token
-TELEGRAM_CHAT_ID=your_chat_id
-```
+There is no contact form (the site is static). The contact section links to Telegram (`siteConfig.telegramUrl`) and the phone number (`tel:` link) from `src/content/site.ts`.
 
 ### Styling
 

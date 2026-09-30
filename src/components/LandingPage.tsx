@@ -3,7 +3,6 @@ import { demos, LANDING_DEMO_COUNT } from "@/content/demos";
 import { siteConfig } from "@/content/site";
 import DemoCard from "./DemoCard";
 import { OutlineButton, PrimaryButton } from "./Buttons";
-import ContactForm from "./ContactForm";
 import SiteHeader from "./SiteHeader";
 import FaqAccordion from "./FaqAccordion";
 
@@ -340,20 +339,18 @@ export default function LandingPage({ locale }: { locale: Locale }) {
                   </div>
                 </div>
               </div>
-              <div className="rounded-[32px] bg-white p-8 shadow-card">
+              <div className="flex flex-col justify-center rounded-[32px] bg-white p-8 shadow-card">
                 <h3 className="text-2xl font-semibold text-ink">{dict.contact.formTitle}</h3>
-                <div className="mt-6">
-                  <ContactForm
-                    locale={locale}
-                    labels={{
-                      name: dict.contact.name,
-                      phone: dict.contact.phone,
-                      message: dict.contact.message,
-                      submit: dict.contact.submit,
-                      success: dict.contact.success,
-                      error: dict.contact.error
-                    }}
-                  />
+                <div className="mt-6 flex flex-col gap-3 sm:flex-row">
+                  <PrimaryButton href={siteConfig.telegramUrl} className="justify-center">
+                    {dict.contact.telegramCta}
+                  </PrimaryButton>
+                  <OutlineButton
+                    href={`tel:${siteConfig.phone.replace(/\s/g, "")}`}
+                    className="justify-center"
+                  >
+                    {dict.contact.callCta}
+                  </OutlineButton>
                 </div>
               </div>
             </div>
